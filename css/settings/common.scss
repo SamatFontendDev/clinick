@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans';
+    font-size: 14px;
+}
+ul{
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+.container{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+img{
+    max-width: 100%;
+}
+.section{
+    padding-top: 50px;
+    padding-bottom: 40px;
+}

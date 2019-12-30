@@ -1,0 +1,16 @@
+// vars
+$pink: #6c89c8;
+$blue: rgb(95, 92, 158);
+// settings
+@import "settings/common.scss";
+@import "settings/mixins.scss";
+
+// blocks
+@import "blocks/header.scss";
+@import "blocks/hero.scss";
+@import "blocks/titles.scss";
+@import "blocks/services.scss";
+@import "blocks/akcii.scss";
+@import "blocks/advantages.scss";
+@import "blocks/advice.scss";
+@import "blocks/form.scss";
