@@ -1,0 +1,85 @@
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, .7);
+    display: none;
+    z-index: 2;
+}
+.modal-form{
+    display: none;
+    position: fixed;
+    top: 100px;
+    left: 50%;
+    margin-left: -250px;
+    z-index: 50;
+    background: #fff;
+    padding: 50px;
+    border-radius: 10px;
+    max-width: 500px;
+    @include phones{
+        width: 80%;
+        left: 10%;
+        margin-left: 0;
+        padding: 30px;    
+    }
+    form{
+        width: 100%;
+    }
+    .form-buttons{
+        @include phones{
+            flex-direction: column;
+        }
+    }
+    .hero-btn_mr-10{
+        @include phones{
+            margin-right: 0;
+            margin-bottom: 10px;
+        }
+    }
+    .form__title{
+       @include phones{
+            margin-bottom: 30px;
+            font-size: 24px;
+            line-height: 30px;
+       }
+    }
+    .input{
+       @include phones{
+            font-size: 14px;
+            line-height: 18px;
+        }
+    }
+    .hero-btn{
+        @include phones{
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
+.close{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    fill: #5f5c9e;
+    cursor: pointer;
+}
+.full-screen-menu{
+    display: none;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+}
+.container-menu{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}

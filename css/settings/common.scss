@@ -8,6 +8,9 @@ html,body{
     margin: 0;
     font-family: 'Open Sans';
     font-size: 14px;
+    @include phones{
+        font-size: 13px;
+    }
 }
 ul{
     padding: 0;
@@ -24,10 +27,42 @@ a{
     max-width: 1024px;
     margin: 0 auto;
 }
+@media screen and (min-width: 1600px) {
+    .container{
+        max-width: 1250px;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+.container{
+    @include phones{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
 img{
     max-width: 100%;
 }
 .section{
     padding-top: 50px;
     padding-bottom: 40px;
+}
+.ovh{
+    overflow: hidden;
+}
+.none{
+    display: none;
+}
+.breadcreams{
+    margin-bottom: 20px;
+}
+.breadcreams__link{
+    color: rgb(125, 119, 166);
+}
+.breadcreams__link--not{
+    color: rgb(199, 119, 191);
 }

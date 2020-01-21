@@ -1,0 +1,72 @@
+.news{
+    background: #f5f8ff;
+}
+.news__top{
+    margin-bottom: 50px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.news__content{
+    display: flex;
+    justify-content: space-between;
+    @include tablets{
+        flex-direction: column;
+    }
+}
+.news__col{
+    width: 48%;
+    @include tablets{
+        width: 100%;
+        &:first-child{
+            margin-bottom: 30px;
+        }
+    }
+}
+.new{
+    padding-left: 40px;
+    position: relative;
+    margin-bottom: 30px;
+    &::before{
+        content: '';
+        display: inline-block;
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background-color: rgb(199, 119, 191);
+        border-radius: 50%;
+        top: 10px;
+        left: 0;
+    }
+}
+.new__title{
+    font-size: 22px;
+    line-height: 36px;
+    color: rgb(95, 92, 158);
+    text-decoration: underline;
+    font-family: 'Merriweather';
+    font-weight: 600;
+    margin-bottom: 20px;
+    display: block;
+    @include phones{
+        font-size: 20px;
+        line-height: 28px;
+    }
+}
+.new__date{
+    color: rgb(125, 119, 166);
+    margin-bottom: 20px;
+}
+.new__text{
+    font-size: 18px;
+    line-height: 38px;
+    color: rgb(95, 92, 158);
+    @include phones{
+        font-size: 16px;
+        line-height: 26px;
+    }
+}
+.specialists-slider__btn-text-ml-40{
+    margin-left: 40px;
+}

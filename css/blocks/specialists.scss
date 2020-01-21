@@ -1,0 +1,128 @@
+.specialists{
+    background: #f5f8ff;
+}
+.specialists__text{
+    color: $blue;
+    font-size: 20px;
+    line-height: 34px;
+    display: flex;
+    margin-bottom: 30px;
+    @include phones{
+        font-size: 16px;
+        line-height: 28px;
+    }
+}
+.quotes-blue{
+    fill: $blue;
+}
+.specialists__text-left{
+    margin-right: 15px;
+    margin-top: -12px;
+}
+.specialists-content{
+    padding-left: 60px;
+    @include phones{
+        padding-left: 0;
+    }
+}
+.hero-btn-mb-30{
+    margin-bottom: 30px;
+}
+.specialists-small-text{
+    color: rgb(125, 119, 166);
+    line-height: 24px;
+    max-width: 440px;
+    margin-bottom: 80px;
+}
+.specialists-slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    position: relative;
+}
+.specialists-slider__list{
+    width: 80%;
+}
+.specialists-slider__link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.specialists-slider__ava{
+    width: 200px;
+    height: 200px;
+    border-radius: 60% 40% 40% 60% / 50%;
+    border-top-left-radius: 60% 50%;
+    border-top-right-radius: 40% 50%;
+    border-bottom-right-radius: 40% 50%;
+    border-bottom-left-radius: 60% 50%;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.specialists-slider__name{
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: rgb(95, 92, 158);
+    text-decoration: underline;
+}
+.specialists-slider__desc{
+    font-size: 14px;
+    line-height: 24px;
+    color: rgb(125, 119, 166);
+    text-align: center;
+    margin-bottom: 40px;
+}
+.specialists-slider__btn{
+    display: flex;
+    align-items: center;
+}
+.specialists-slider__btn-text{
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 1px;
+    color: rgb(199, 119, 191);
+    text-decoration: underline;
+}
+.specialists-slider__btn-svg{
+    width: 16px;
+    height: 16px;
+    fill: rgb(199, 119, 191);
+}
+.specialists-bottom{
+    padding-left: 60px;
+    max-width: 890px;
+    position: relative;
+    p{
+        font-size: 18px;
+        line-height: 34px;
+        color: rgb(95, 92, 158);
+        @include phones{
+            font-size: 16px;
+        }
+    }
+    &:before{
+        content: '';
+        display: inline-block;
+        position: absolute;
+        width: 30px;
+        height: 1.5px;
+        background-color: rgb(95, 92, 158);
+        top: 14px;
+        left: 11px;
+    }
+}
+.specialists-slider-next,.specialists-slider-prev{
+    @include phones{
+        position: absolute;
+    }
+}
+.specialists-slider-next{
+    right: 10px;
+}
+.specialists-slider-prev{
+    left: 10px;
+}

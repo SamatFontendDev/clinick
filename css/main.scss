@@ -2,8 +2,8 @@
 $pink: #6c89c8;
 $blue: rgb(95, 92, 158);
 // settings
-@import "settings/common.scss";
 @import "settings/mixins.scss";
+@import "settings/common.scss";
 
 // blocks
 @import "blocks/header.scss";
@@ -14,3 +14,11 @@ $blue: rgb(95, 92, 158);
 @import "blocks/advantages.scss";
 @import "blocks/advice.scss";
 @import "blocks/form.scss";
+@import "blocks/specialists.scss";
+@import "blocks/news.scss";
+@import "blocks/footer.scss";
+@import "blocks/modals.scss";
+@import "blocks/contacts.scss";
+@import "blocks/about.scss";
+@import "blocks/service.scss";
+@import "blocks/reviews.scss";

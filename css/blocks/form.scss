@@ -4,6 +4,9 @@
 }
 .form{
     width: 50%;
+    @include phones{
+        width: 100%;
+    }
 }
 .form__title{
     margin-bottom: 60px;
@@ -36,9 +39,44 @@
     align-items: center;
 }
 .hero-btn_mr-10{
-    margin-right: 10px;
+    margin-right: 30px;
 }
 .consent{
     width: 230px;
     display: flex;
+}
+.checkbox{
+    display: none;
+}
+.label-check{
+    display: flex;
+}
+.label-col{
+    margin-right: 8px;
+}
+.label-box{
+    width: 25px;
+    height: 25px;
+    background: #edf0fa;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.checkbox-svg{
+    width: 18px;
+    height: 16px;
+    fill: #c777bf;
+}
+.label-check{
+    cursor: pointer;
+}
+.label-text{
+    a{
+        color: #c777bf;
+        text-decoration: underline;
+        &:hover{
+            text-decoration: none;
+        }
+    }
 }

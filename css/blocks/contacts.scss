@@ -1,0 +1,48 @@
+.contacts{
+    background: #f7f8ff;
+}
+.section-title--tal{
+    text-align: left;
+}
+.clock{
+    width: 20px;
+    height: 20px;
+    fill: #5f5c93;
+}
+.contacts-subtitle{
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #5f5c9e;
+}
+.contacts-tel{
+    font-size: 32px;
+    color: #5f5c93;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+.contacts-mail{
+    font-size: 32px;
+    color: #5f5c93;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+.contacts__list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 20px;
+}
+.contacts__item--clock{
+    display: flex;
+    .clock{
+        margin-right: 10px;
+    }
+    .contacts-text{
+        color: #5f5c93;
+    }
+}
+.map{
+    margin-bottom: -10px;
+}

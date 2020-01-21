@@ -1,6 +1,9 @@
 .title{
     font-family: 'Merriweather';
     font-size: 38px;
+    @include phones{
+        font-size: 30px;
+    }
 }
 .section-title{
     font-size: 50px;
@@ -8,16 +11,31 @@
     color: $blue;
     text-align: center;
     margin-bottom: 30px;
+    @include tablets{
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
 }
 .section-title-s{
     font-family: 'Merriweather';
     color: $blue;
     margin-bottom: 30px;
     font-size: 36px;
+    @include phones{
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
 }
 .section-title-s-mb-50{
     margin-bottom: 50px;
+    @include phones{
+        margin-bottom: 30px;
+    }
 }
 .section-title-s_white{
     color: #fff;
+}
+.title--service{
+    margin-bottom: 25px;
+    color: #5f5c9e;
 }

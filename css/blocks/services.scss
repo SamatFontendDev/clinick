@@ -6,17 +6,27 @@
 .services-list{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    @include desktop{
+        grid-template-columns: 1fr 1fr;
+    }
 }
 .services__link{
     display: flex;
     align-items: center;
     padding: 10px;
+    @include phones{
+        padding: 5px;
+    }
 }
 .services-icon{
     margin-right: 15px;
     width: 70px;
     height: 70px;
     fill: $pink;
+    @include phones{
+        width: 30px;
+        height: 30px;
+    }
 }
 .services-subtitle{
     color: $blue;
@@ -26,5 +36,11 @@
     &:hover{
         transition: .2s;
         opacity: 0.8;
+    }
+    @include phones{
+        font-size: 12px;
+    }
+    @include sm{
+        font-size: 10px;
     }
 }
