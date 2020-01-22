@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/fonts/OpenSans/stylesheet.css">
     <link rel="stylesheet" href="/fonts/Merriweather/stylesheet.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
@@ -110,12 +111,12 @@
                 </div>
                 <div class="service__btns">
                     <div class="hero-btn sign-up">КОНСУЛЬТАЦИЯ</div>
-                    <div class="service-btn">ЦЕНЫ</div>
-                    <div class="service-btn">ВРАЧИ</div>
+                    <a href="#service-price" class="service-btn scroll-btn">ЦЕНЫ</a>
+                    <a href="#doctors" class="service-btn scroll-btn">ВРАЧИ</a>
                 </div>
             </div>
         </section>
-        <section class="section doctors">
+        <section id="doctors" class="section doctors">
             <div class="container">
                 <div class="section-title-s section-title-s-mb-50">Внимательные имплантологи с опытом 10-16 лет</div>
                 <div class="doctors__content">
@@ -130,13 +131,12 @@
                                <p>Специализируемся на сложной имплантации с 2006 года.</p>
                                <p>Наши специалисты имеют внушительный опыт работы и обладают всеми необходимыми навыками для имплантации зубов с высокой приживляемостью имплантатов.</p>
                                <div class="service__btns">
-                                <div class="service-btn service-btn_ml_0">ОТЗЫВЫ И ФОТО</div>
-                                <div class="service-btn">ЭТАПЫ</div>
-                                <div class="service-btn">ГАРАНТИЯ</div>
+                                <a href="#reviews" class="service-btn service-btn_ml_0 scroll-btn">ОТЗЫВЫ И ФОТО</a>
+                                <a href="#stages" class="service-btn scroll-btn">ЭТАПЫ</a>
+                                <a href="#warranty" class="service-btn scroll-btn">ГАРАНТИЯ</a>
                             </div>
                             </div>
                         </div>
-                        
                     </div>
                     <div class="doctors__col">
                         <div class="doctors-slider">
@@ -177,7 +177,7 @@
                 </div>
             </div>
         </section>
-        <section class="section service-price">
+        <section id="service-price" class="section service-price">
             <div class="container">
                 <div class="section-title-s section-title-s-mb-50">Стоимость имплантации</div>
                 <div class="service-price__desc">
@@ -214,7 +214,7 @@
                 </ul>
             </div>
         </section>
-        <section class="section stages">
+        <section id="stages" class="section stages">
             <div class="container">
                 <div class="section-title-s section-title-s-mb-50">Основные этапы имплантации</div>
                 <ul class="stages__list">
@@ -273,7 +273,7 @@
                 </ul>
             </div>
         </section>
-        <section class="section reviews">
+        <section id="reviews" class="section reviews">
             <div class="container">
                 <div class="section-title-s section-title-s-mb-50">Отзывы и фото пациентов<br> после имплантации</div>
                 <div class="reviews__content">
@@ -326,17 +326,23 @@
                                             <div class="reviews-slider__photos">
                                                 <div class="reviews-slider__photo-wrap">
                                                     <div class="reviews-slider__photo">
-                                                        <img src="/imgs/pictures/varvara_before.jpg" alt="" class="reviews-slider__img">
+                                                        <a href="/imgs/pictures/varvara_before.jpg" data-fancybox="gallery" data-caption="Caption for single image">
+                                                            <img src="/imgs/pictures/varvara_before.jpg" alt="" class="reviews-slider__img">
+                                                        </a>
                                                     </div>
                                                 </div>
                                                 <div class="reviews-slider__photo-wrap">
                                                     <div class="reviews-slider__photo">
-                                                        <img src="/imgs/pictures/varvara_after.jpg" alt="" class="reviews-slider__img">
+                                                        <a href="/imgs/pictures/varvara_after.jpg" data-fancybox="gallery" data-caption="Caption for single image">
+                                                            <img src="/imgs/pictures/varvara_after.jpg" alt="" class="reviews-slider__img">
+                                                        </a>
                                                     </div>
                                                 </div>
                                                 <div class="reviews-slider__photo-wrap">
                                                     <div class="reviews-slider__photo">
-                                                        <img src="/imgs/pictures/varvara_final.jpg" alt="" class="reviews-slider__img">
+                                                        <a href="/imgs/pictures/varvara_final.jpg" data-fancybox="gallery" data-caption="Caption for single image">
+                                                            <img src="/imgs/pictures/varvara_final.jpg" alt="" class="reviews-slider__img">
+                                                        </a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -363,23 +369,30 @@
                                             <div class="reviews-slider__photos">
                                                 <div class="reviews-slider__photo-wrap">
                                                     <div class="reviews-slider__photo">
-                                                        <img src="/imgs/pictures/varvara_before.jpg" alt="" class="reviews-slider__img">
+                                                        <a href="/imgs/pictures/varvara_before.jpg" data-fancybox="gallery" data-caption="Caption for single image">
+                                                            <img src="/imgs/pictures/varvara_before.jpg" alt="" class="reviews-slider__img">
+                                                        </a>
                                                     </div>
                                                 </div>
                                                 <div class="reviews-slider__photo-wrap">
                                                     <div class="reviews-slider__photo">
-                                                        <img src="/imgs/pictures/varvara_after.jpg" alt="" class="reviews-slider__img">
+                                                        <a href="/imgs/pictures/varvara_after.jpg" data-fancybox="gallery" data-caption="Caption for single image">
+                                                            <img src="/imgs/pictures/varvara_after.jpg" alt="" class="reviews-slider__img">
+                                                        </a>
                                                     </div>
                                                 </div>
                                                 <div class="reviews-slider__photo-wrap">
                                                     <div class="reviews-slider__photo">
-                                                        <img src="/imgs/pictures/varvara_final.jpg" alt="" class="reviews-slider__img">
+                                                        <a href="/imgs/pictures/varvara_final.jpg" data-fancybox="gallery" data-caption="Caption for single image">
+                                                            <img src="/imgs/pictures/varvara_final.jpg" alt="" class="reviews-slider__img">
+                                                        </a>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </li>
+                               
                             </ul>
                         </div>
                         <div class="slider-buttons slider-buttons--reviews">
@@ -387,6 +400,122 @@
                             <div class="slider-button slider-button--reviews-next"></div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+        <section id="warranty" class="section warranty">
+            <div class="container">
+                <div class="section-title-s section-title-s-mb-50">Пожизненная гарантия на импланты</div>
+                <div class="specialists__text">
+                    <div class="specialists__text-left">
+                        <svg class="quotes quotes-blue">
+                            <use xlink:href="/svg/sprite.svg#quotes"></use>
+                        </svg>
+                    </div>
+                   <div>Помогаем решить проблему раз и навсегда. В клинике “Стоматология Комфорта” используем только проверенные имплантаты зубов от ведущих мировых производителей, на которые распространяется бессрочная гарантия.</div>
+                </div>
+                <a href="#advice" class="reviews__link reviews__link--warranty scroll-btn">КАК УХАЖИВАТЬ ЗА ИМПЛАНТАИ</a>
+                <div class="section-title-s section-title-s-mb-50">5 преимуществ имплантации</div>
+                <div class="implantation">
+                    <ul class="implantation__list">
+                        <li class="implantation__item">
+                            <div class="implantation__num"><span>1.</span></div>
+                            <div class="implantation__text">
+                                <div class="implantation__title">Приживаемость почти в 100% случаев</div>
+                                <div class="implantation__desc">Хорошая подготовка позволяет уменьшить риск отторжения конструкции</div>
+                            </div>
+                        </li>
+                        <li class="implantation__item">
+                            <div class="implantation__num"><span>2.</span></div>
+                            <div class="implantation__text">
+                                <div class="implantation__title">Полностью восстанавливает зубы</div>
+                                <div class="implantation__desc">Возобновляет жевательную функцию и эстетику зубного ряда</div>
+                            </div>
+                        </li>
+                        <li class="implantation__item">
+                            <div class="implantation__num"><span>3.</span></div>
+                            <div class="implantation__text">
+                                <div class="implantation__title">Сохранение костной ткани челюсти</div>
+                                <div class="implantation__desc">После вживления импланта уровень челюстной кости не снижается</div>
+                            </div>
+                        </li>
+                        <li class="implantation__item">
+                            <div class="implantation__num"><span>4.</span></div>
+                            <div class="implantation__text">
+                                <div class="implantation__title">Ощущаются как свои собственные зубы</div>
+                                <div class="implantation__desc">Коронка фиксируется на штифт, который заменяет утраченный корень зуба</div>
+                            </div>
+                        </li>
+                        <li class="implantation__item">
+                            <div class="implantation__num"><span>5.</span></div>
+                            <div class="implantation__text">
+                                <div class="implantation__title">Избавляют от использования протезов</div>
+                                <div class="implantation__desc">Считаются лучшим вариантом восстановления, т.к. не доставляют дискомфорта при эксплуатации</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="advice" class="section advice advice--white">
+            <div class="container">
+                <div class="section-title-s section-title-s_white">Совет врача —
+                    уход за имплантами</div>
+                <div class="advice__text">
+                    <div class="advice__col">
+                        <svg class="quotes">
+                            <use xlink:href="/svg/sprite.svg#quotes"></use>
+                        </svg>
+                    </div>
+                    <div class="advice__col">
+                        <p>Один из плюсов имплантов — за ними не требуется постоянный специальный уход. Но чтобы продлить срок их эксплуатации, рекомендуется выполнять простые действия, которые позволят сохранить зубной имплантат в хорошем состоянии.</p>
+                    </div>
+                </div>
+                <div class="doctor">
+                    <div class="doctor__pic">
+                        <img src="/imgs/pictures/small_img_img_doctors_1_3.jpg" alt="" class="doctor__img">
+                    </div>
+                    <div class="doctor__desc">
+                        <div class="doctor-name">Салеева Гульшат Тауфиковна</div>
+                        <div class="doctor-prof">д.м.н, профессор,  врач стоматолог – ортопед высшей категории, заведующая кафедрой ортопедической стоматологии КГМУ.</div>
+                    </div>
+                </div>
+                <div class="doctor-advice">
+                    <div class="doctor-advice__title">Более подробную информацию о правилах ухода вам расскажет врач на индивидуальной консультации. К общим же правилам можно отнести следующие:</div>
+                    <ul class="doctor-advice__list">
+                        <li class="doctor-advice__item">
+                            <div class="doctor-advice__icon">
+                                <svg class="check">
+                                    <use xlink:href="/svg/sprite.svg#check"></use>
+                                </svg>
+                            </div>
+                            <div class="docot-advice__text">Посещение врача-стоматолога не менее 2-3 раз в год</div>
+                        </li>
+                        <li class="doctor-advice__item">
+                            <div class="doctor-advice__icon">
+                                <svg class="check">
+                                    <use xlink:href="/svg/sprite.svg#check"></use>
+                                </svg>
+                            </div>
+                            <div class="docot-advice__text">Посещение врача-стоматолога не менее 2-3 раз в год</div>
+                        </li>
+                        <li class="doctor-advice__item">
+                            <div class="doctor-advice__icon">
+                                <svg class="check">
+                                    <use xlink:href="/svg/sprite.svg#check"></use>
+                                </svg>
+                            </div>
+                            <div class="docot-advice__text">Посещение врача-стоматолога не менее 2-3 раз в год</div>
+                        </li>
+                        <li class="doctor-advice__item">
+                            <div class="doctor-advice__icon">
+                                <svg class="check">
+                                    <use xlink:href="/svg/sprite.svg#check"></use>
+                                </svg>
+                            </div>
+                            <div class="docot-advice__text">Посещение врача-стоматолога не менее 2-3 раз в год</div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section>
@@ -615,6 +744,7 @@
     crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script src="/js/script.js"></script>
 </body>
 </html>

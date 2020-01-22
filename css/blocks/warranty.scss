@@ -1,0 +1,33 @@
+.reviews__link--warranty{
+    margin-bottom: 30px;
+}
+.warranty{
+    background: #f6f9ff;
+}
+.implantation__list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+.implantation__item{
+    display: flex;
+}
+.implantation__num{
+    color: #c777bf;
+    font-weight: 600;
+    font-size: 16px;
+    padding-top: 5px;
+}
+.implantation__text{
+    padding-left: 10px;
+}
+.implantation__title{
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #5f5c9e;
+    font-weight: 600;
+}
+.implantation__desc{
+    font-size: 18px;
+    color: #5f5c9e;
+}

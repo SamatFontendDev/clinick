@@ -25,6 +25,27 @@ $(document).ready(function(){
             }
         ]
     });
+    $('.docs-slider__list').slick({
+        slidesToShow: 3,
+        prevArrow: $('.slider-buttons--about-prev'),
+        nextArrow: $('.slider-buttons--about-next'),
+        responsive: [
+            {
+                breakpoint: 960,
+
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 640,
+
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });
     $('.doctors-slider__list').slick({
         prevArrow: $('.slider-button-doctors-prev'),
         nextArrow: $('.slider-button-doctors-next')
@@ -34,7 +55,6 @@ $(document).ready(function(){
         prevArrow: $('.slider-button--reviews-prev'),
         nextArrow: $('.slider-button--reviews-next')
     });
-   
     // checkbox
     // document.querySelector('.label-wrap').addEventListener('click', () => {
     //    if (document.querySelector('.checkbox').checked) {
@@ -87,4 +107,13 @@ $(document).ready(function(){
     });
 
     // service btns
+   $('.scroll-btn').click(function(e) {
+        e.preventDefault(e);
+        var id  = $(this).attr('href');
+        var top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1000);
+   });
+
+    //gallery
+    $('[data-fancybox="gallery"]').fancybox({});    
 });
