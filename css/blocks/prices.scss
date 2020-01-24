@@ -4,17 +4,28 @@
 .service-btn_mb{
     margin-bottom: 50px;
     display: inline-block;
+    @include phones{
+        margin-bottom: 30px;
+    }
 }
 .prices-btns-block{
     padding: 50px 60px 40px;
     box-shadow: 0 66px 40px -46px rgba(167,175,194,.11);
     background:  #fff;
     border-radius: 40px;
+    @include phones{
+        padding: 10px;
+        border-radius: 10px;
+    }
 }
 .prices-btns-block__item{
     margin-right: 10px;
     margin-bottom: 10px;
     display: inline-block;
+    @include phones{
+        margin-right: 5px;
+        margin-bottom: 5px;
+    }
 }
 .prices-btns-block__link{
     display: inline-block;
@@ -28,6 +39,10 @@
         background-color: #c777bf;
         color: #fff;
     }
+    @include phones{
+        padding: 4.5px 10px;
+        font-size: 13px;
+    }
 }
 .prices-block{
     background: #f6f9ff;
@@ -40,4 +55,17 @@
     font-size: 22px;
     font-weight: 600;
     margin-bottom: 20px;
+    @include tablets{
+        font-size: 18px;
+    }
+}
+.prices__name{
+    @include tablets{
+        font-size: 14px;
+    }
+}
+.prices__num{
+    @include tablets{
+        font-size: 14px;
+    }
 }

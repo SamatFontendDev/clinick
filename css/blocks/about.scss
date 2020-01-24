@@ -18,6 +18,12 @@
 .about-slider__list{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    @include tablets{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    @include phones{
+        grid-template-columns: 1fr 1fr;
+    }
 }
 .about-slider__img{
     margin: -2px;

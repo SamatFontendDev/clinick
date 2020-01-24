@@ -1,0 +1,14 @@
+.doctors-page{
+    padding-bottom: 100px;
+}
+.doctors-page__list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
+    @include tablets{
+        grid-template-columns: 1fr 1fr;
+    }
+    @include phones{
+        grid-template-columns: 1fr;
+    }
+}

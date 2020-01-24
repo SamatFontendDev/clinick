@@ -20,6 +20,9 @@
     &:hover{
         text-decoration: underline;
     }
+    @include phones{
+        font-size: 24px;
+    }
 }
 .contacts-mail{
     font-size: 32px;
@@ -31,8 +34,10 @@
 .contacts__list{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
     grid-gap: 20px;
+    @include tablets{
+        grid-template-columns: 1fr;
+    }
 }
 .contacts__item--clock{
     display: flex;

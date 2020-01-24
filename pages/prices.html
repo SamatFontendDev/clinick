@@ -109,47 +109,48 @@
                 <div class="prices-btns-block">
                     <ul class="prices-btns-block__list">
                         <li class="prices-btns-block__item">
-                            <a href="#" class="prices-btns-block__link">Имплантация</a>
+                            <a href="#implantacia" class="prices-btns-block__link scroll-btn">Имплантация</a>
                         </li>
                         <li class="prices-btns-block__item">
-                            <a href="#" class="prices-btns-block__link">Лечение зубов</a>
+                            <a href="#lechenie-zubov" class="prices-btns-block__link scroll-btn">Лечение зубов</a>
                         </li>
                         <li class="prices-btns-block__item">
-                            <a href="#" class="prices-btns-block__link">Протезирование</a>
+                            <a href="#protezirovanie" class="prices-btns-block__link scroll-btn">Протезирование</a>
                         </li>
                         <li class="prices-btns-block__item">
-                            <a href="#" class="prices-btns-block__link">Виниры</a>
+                            <a href="#viniri" class="prices-btns-block__link scroll-btn">Виниры</a>
                         </li>
                         <li class="prices-btns-block__item">
-                            <a href="#" class="prices-btns-block__link">Исправление прикуса</a>
+                            <a href="#ispravlenie-prikusa" class="prices-btns-block__link scroll-btn">Исправление прикуса</a>
                         </li>
                         <li class="prices-btns-block__item">
-                            <a href="#" class="prices-btns-block__link">Лечение зубов</a>
+                            <a href="#lechenie-zubov" class="prices-btns-block__link scroll-btn">Лечение зубов</a>
                         </li>
                         <li class="prices-btns-block__item">
-                            <a href="#" class="prices-btns-block__link">Лечение десен</a>
+                            <a href="#lechenie-desen" class="prices-btns-block__link scroll-btn">Лечение десен</a>
                         </li>
                         <li class="prices-btns-block__item">
-                            <a href="#" class="prices-btns-block__link">Удаление зубов</a>
+                            <a href="#udalenie-zubov" class="prices-btns-block__link scroll-btn">Удаление зубов</a>
                         </li>
                         <li class="prices-btns-block__item">
-                            <a href="#" class="prices-btns-block__link">Профессиональная чистка</a>
+                            <a href="#profesionalnaya-chistka" class="prices-btns-block__link scroll-btn">Профессиональная чистка</a>
                         </li>
                         <li class="prices-btns-block__item">
-                            <a href="#" class="prices-btns-block__link">Отбеливание</a>
+                            <a href="#otbelivanie" class="prices-btns-block__link scroll-btn">Отбеливание</a>
                         </li>
                         <li class="prices-btns-block__item">
-                            <a href="#" class="prices-btns-block__link">Детская стоматология</a>
+                            <a href="#detskaya-stomatologia" class="prices-btns-block__link scroll-btn">Детская стоматология</a>
                         </li>
                         <li class="prices-btns-block__item">
-                            <a href="#" class="prices-btns-block__link">Диагностика</a>
+                            <a href="#diagnostika" class="prices-btns-block__link scroll-btn">Диагностика</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </section>
-        <section class="section prices-block">
+        <section id="prices-block" class="section prices-block">
             <div class="container">
+                <div class="section-title-s section-title-s-mb-50">Наши цены</div>
                 <ul class="prices-block__list">
                     <li class="prices-block__item">
                         <div class="prices-block__title">Имплантация</div>
@@ -239,6 +240,44 @@
                         </ul>
                     </li>
                 </ul>
+            </div>
+        </section>
+        <section class="section section-form">
+            <div class="container">
+                <div class="form-wrap">
+                    <form action="#" class="form">
+                        <div class="form__title">Всегда рады ответить<br> на ваши вопросы</div>
+                        <div class="form-row">
+                            <input placeholder="Ваше имя" type="text" class="input">
+                        </div>
+                        <div class="form-row">
+                            <input placeholder="Контактный телефон" type="text" class="input input-tel">
+                        </div>
+                        <div class="form-row">
+                            <textarea placeholder="Задайте вопрос" class="input textarea" name="question" id=""></textarea>
+                        </div>
+                        <div class="form-buttons">
+                            <div class="hero-btn hero-btn_mr-10">ОТПРАВИТЬ</div>
+                            <div class="consent">
+                                <input checked='true' class="checkbox" id="check" type="checkbox">
+                                <div class="label-wrap">
+                                    <label class="label-check" for="check">
+                                        <div class="label-col">
+                                            <div class="label-box">
+                                                <svg class="checkbox-svg">
+                                                    <use xlink:href="/svg/sprite.svg#checkbox"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="label-text">
+                                            Я принимаю <a href="#" class="label-link">условия передачи информации</a>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
         </section>
         <footer class="footer">
@@ -452,6 +491,14 @@
                                         <path class="st3" d="M8.2,32L8.2,32c-0.4-0.4-0.4-1,0-1.4l5.6-5.6l1.4,1.4L9.5,32C9.2,32.4,8.5,32.4,8.2,32z"/>
                                         </svg>
                                     <div class="services-subtitle">Диагностика</div>
+                                </a>
+                            </li>
+                            <li class="services__item">
+                                <a href="#" class="services__link">
+                                    <svg class="services-icon">
+                                        <use xlink:href="/svg/sprite.svg#microscope"></use>
+                                    </svg>
+                                    <div class="services-subtitle">Микроскоп</div>
                                 </a>
                             </li>
                         </ul>

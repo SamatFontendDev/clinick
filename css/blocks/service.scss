@@ -64,6 +64,9 @@
     line-height: 34px;
     color: #5f5c9e;
     margin-bottom: 50px;
+    @include phones{
+        font-size: 15px;
+    }
 }
 .wallet{
     width: 50px;
