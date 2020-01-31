@@ -8,6 +8,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
+    @include phones{
+        grid-template-columns: 1fr;
+    }
 }
 .implantation__item{
     display: flex;

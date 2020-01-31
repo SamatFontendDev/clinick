@@ -15,6 +15,9 @@
         font-size: 28px;
         margin-bottom: 20px;
     }
+    @include phones{
+        font-size: 24px;
+    }
 }
 .section-title-s{
     font-family: 'Merriweather';

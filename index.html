@@ -14,6 +14,25 @@
 <body>
     <div class="wrapper">
         <header class="header">
+            <div class="header__bottom">
+                <div class="container">
+                    <div class="header-bottom-row">
+                        <div class="logo">
+                            <a href="/" class="logo__kink">
+                                <img src="/imgs/rocada-logo.png" alt="" class="logo-img">
+                            </a>
+                        </div>
+                        <a href="/pages/contacts.html" class="adress">
+                            <div class="adress__icon">
+                                <svg class="location">
+                                    <use xlink:href="/svg/sprite.svg#location"></use>
+                                </svg>
+                            </div>
+                            <div class="adress__text">г. Казань ул.Петербургская 26</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
             <div class="header__top">
                 <div class="container">
                     <div class="header-row">
@@ -33,6 +52,12 @@
                                 </div>
                             </div>
                             <ul class="nav-list">
+                                <svg class="close--nav">
+                                    <use xlink:href="/svg/sprite.svg#close"></use>
+                                </svg>
+                                <li class="nav-item">
+                                    <a href="/" class="nav__link">Главная</a>
+                                </li>
                                 <li class="nav-item">
                                     <a href="/pages/services.html" class="nav__link">Услуги</a>
                                 </li>
@@ -40,18 +65,12 @@
                                     <a href="/pages/prices.html" class="nav__link">Цены</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav__link">Акции</a>
-                                </li>
-                                <li class="nav-item">
                                     <a href="/pages/doctors.html" class="nav__link">Врачи</a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="/pages/portfolio.html" class="nav__link">Портфолио</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav__link">Отзывы</a>
-                                </li>
-                                <li class="nav-item">
+                               <li class="nav-item">
                                     <a href="/pages/about.html" class="nav__link">О нас</a>
                                 </li>
                                 <li class="nav-item">
@@ -71,48 +90,27 @@
                     </div>
                 </div>
             </div>
-            <div class="header__bottom">
-                <div class="container">
-                    <div class="header-bottom-row">
-                        <div class="logo">
-                            <a href="/" class="logo__kink">
-                                <img src="/imgs/rocada-logo.png" alt="" class="logo-img">
-                            </a>
-                            <div class="logo-text">Работаем с 1991 года</div>
-                        </div>
-                        <a href="#" class="adress">
-                            <div class="adress__icon">
-                                <svg class="location">
-                                    <use xlink:href="/svg/sprite.svg#location"></use>
-                                </svg>
-                            </div>
-                            <div class="adress__text">г. Казант ул.Петербургская 26</div>
-                        </a>
-                    </div>
-                </div>
-            </div>
+            
         </header>
         <section class="section hero">
            <div class="container hero-container">
                <div class="hero-block">
-                    <div class="title">Клиника, где приятно<br> лечить зубы!</div>
+                    <h1 class="title">Стоматология Рокада-Мед</h1>
                     <div class="hero-text">
                         <!-- <svg class="quotes">
                             <use xlink:href="/svg/sprite.svg#quotes"></use>
                         </svg> -->
                         <div class="hero-text-2">
-                            «Рокада Мед» — лучшие технологии врачам,<br>
-                             сияющие улыбки — пациентам,<br>
-                              здоровье — нации..
+                           Клиника где приятно лечить зубы!
                         </div>
-                        <a href="#" class="hero-btn">ПОДРОБНЕЕ О КЛИНИКЕ</a>
+                        <a href="/pages/about.html" class="hero-btn">ПОДРОБНЕЕ О КЛИНИКЕ</a>
                     </div>
                </div>
             </div>
         </section>
         <section class="section services">
             <div class="container">
-                <div class="section-title">Стоматология Рокада Мед</div>
+                <div class="section-title">ООО «Стоматологическая поликлиника «Рокада-Мед» </div>
                 <div class="services__icons">
                     <ul class="services-list">
                         <li class="services__item">
@@ -244,7 +242,7 @@
                 </div>
             </div>
         </section>
-        <section class="section akcii">
+        <!-- <section class="section akcii">
             <div class="container">
                 <div class="section-title-s section-title-s-mb-50">Выгодные предложения</div>
                 <div class="akcii__content">
@@ -314,7 +312,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <section class="section advantages">
             <div class="container">
                 <div class="advantages__content">
@@ -357,13 +355,13 @@
                         </li>
                         <li class="icons__item">
                             <div class="icons__item-left">
-                                <svg class="advantages-icon">
-                                    <use xlink:href="/svg/sprite.svg#goodPrice"></use>
+                                <svg class="advantages-icon advantages-icon--clock">
+                                    <use xlink:href="/svg/sprite.svg#clock"></use>
                                 </svg>
                             </div>
                            <div class="advantages-icons__text">
-                                <div class="advantages-icons__subtittle">Доступные цены</div>
-                                <p>Мы стараемся сократить ваши расходы, поэтому регулярно организуем для вас выгодные акции и скидки.</p>
+                                <div class="advantages-icons__subtittle">Консультация всех специалистов одномоментно!</div>
+                                <p>В нашей клинике есть возможность получить консультацию всех специалистов за один визит.</p>
                             </div>
                         </li>
                         <li class="icons__item">
@@ -418,7 +416,7 @@
                 </div>
                 <div class="doctor">
                     <div class="doctor__pic">
-                        <img src="/imgs/pictures/small_img_img_doctors_1_3.jpg" alt="" class="doctor__img">
+                        <img src="/imgs/pictures/gulshattafikovna.jpg" alt="" class="doctor__img">
                     </div>
                     <div class="doctor__desc">
                         <div class="doctor-name">Салеева Гульшат Тауфиковна</div>
@@ -474,7 +472,7 @@
                         <div class="form-buttons">
                             <button class="hero-btn hero-btn_mr-10">ОТПРАВИТЬ</button>
                             <div class="consent">
-                                <!-- <input checked='true' class="checkbox" id="check" type="checkbox"> -->
+                                <input checked='true' class="checkbox" id="check" type="checkbox">
                                 <div class="label-wrap">
                                     <label class="label-check" for="check">
                                         <div class="label-col">
@@ -514,91 +512,83 @@
                     <div class="slider-button specialists-slider-prev"></div>
                     <ul class="specialists-slider__list">
                         <li class="specialists-slider__item">
-                            <a href="#" class="specialists-slider__link">
+                            <div class="specialists-slider__link">
                                 <div class="specialists-slider__ava">
                                     <img src="/imgs/pictures/small_img_img_doctors_1_3.jpg" alt="" class="specialists-slider__img">
                                 </div>
                                 <div class="specialists-slider__name">Назырова Гузель Лероновна</div>
                                 <div class="specialists-slider__desc">Врач стоматолог – терапевт первой категории</div>
-                                <div class="specialists-slider__btn">
-                                    <div class="specialists-slider__btn-text">О ВРАЧЕ</div>
-                                </div>
-                            </a>
+                            </div>
                         </li>
                         <li class="specialists-slider__item">
-                            <a href="#" class="specialists-slider__link">
+                            <div class="specialists-slider__link">
                                 <div class="specialists-slider__ava">
                                     <img src="/imgs/pictures/small_img_img_doctors_1_3.jpg" alt="" class="specialists-slider__img">
                                 </div>
                                 <div class="specialists-slider__name">Назырова Гузель Лероновна</div>
                                 <div class="specialists-slider__desc">Врач стоматолог – терапевт первой категории</div>
-                                <div class="specialists-slider__btn">
-                                    <div class="specialists-slider__btn-text">О ВРАЧЕ</div>
-                                </div>
-                            </a>
+                            </div>
                         </li>
                         <li class="specialists-slider__item">
-                            <a href="#" class="specialists-slider__link">
+                            <div class="specialists-slider__link">
                                 <div class="specialists-slider__ava">
                                     <img src="/imgs/pictures/small_img_img_doctors_1_3.jpg" alt="" class="specialists-slider__img">
                                 </div>
                                 <div class="specialists-slider__name">Назырова Гузель Лероновна</div>
                                 <div class="specialists-slider__desc">Врач стоматолог – терапевт первой категории</div>
-                                <div class="specialists-slider__btn">
-                                    <div class="specialists-slider__btn-text">О ВРАЧЕ</div>
-                                </div>
-                            </a>
+                            </div>
                         </li>
                         <li class="specialists-slider__item">
-                            <a href="#" class="specialists-slider__link">
+                            <div class="specialists-slider__link">
                                 <div class="specialists-slider__ava">
                                     <img src="/imgs/pictures/small_img_img_doctors_1_3.jpg" alt="" class="specialists-slider__img">
                                 </div>
                                 <div class="specialists-slider__name">Назырова Гузель Лероновна</div>
                                 <div class="specialists-slider__desc">Врач стоматолог – терапевт первой категории</div>
-                                <div class="specialists-slider__btn">
-                                    <div class="specialists-slider__btn-text">О ВРАЧЕ</div>
-                                </div>
-                            </a>
+                            </div>
                         </li>
                         <li class="specialists-slider__item">
-                            <a href="#" class="specialists-slider__link">
+                            <div class="specialists-slider__link">
                                 <div class="specialists-slider__ava">
                                     <img src="/imgs/pictures/small_img_img_doctors_1_3.jpg" alt="" class="specialists-slider__img">
                                 </div>
                                 <div class="specialists-slider__name">Назырова Гузель Лероновна</div>
                                 <div class="specialists-slider__desc">Врач стоматолог – терапевт первой категории</div>
-                                <div class="specialists-slider__btn">
-                                    <div class="specialists-slider__btn-text">О ВРАЧЕ</div>
-                                </div>
-                            </a>
+                            </div>
                         </li>
                         <li class="specialists-slider__item">
-                            <a href="#" class="specialists-slider__link">
+                            <div class="specialists-slider__link">
                                 <div class="specialists-slider__ava">
                                     <img src="/imgs/pictures/small_img_img_doctors_1_3.jpg" alt="" class="specialists-slider__img">
                                 </div>
                                 <div class="specialists-slider__name">Назырова Гузель Лероновна</div>
                                 <div class="specialists-slider__desc">Врач стоматолог – терапевт первой категории</div>
-                                <div class="specialists-slider__btn">
-                                    <div class="specialists-slider__btn-text">О ВРАЧЕ</div>
-                                </div>
-                            </a>
+                            </div>
                         </li>
+                        <li class="specialists-slider__item">
+                            <div class="specialists-slider__link">
+                                <div class="specialists-slider__ava">
+                                    <img src="/imgs/pictures/small_img_img_doctors_1_3.jpg" alt="" class="specialists-slider__img">
+                                </div>
+                                <div class="specialists-slider__name">Назырова Гузель Лероновна</div>
+                                <div class="specialists-slider__desc">Врач стоматолог – терапевт первой категории</div>
+                            </div>
+                        </li>
+                       
                     </ul>
                     <div class="slider-button specialists-slider-next"></div>
                 </div>
                 <div class="specialists-bottom">
                     <p>Квалификация наших врачей ежегодно повышается на профильных курсах, семинарах и мастер-классах. У нас работают настоящие профессионалы своего дела, которые не перестают развиваться.</p>
-                    <a href="#" class="specialists-slider__btn-text">ВСЕ ВРАЧИ</a>
+                    <a href="/pages/doctors.html" class="specialists-slider__btn-text">ВСЕ ВРАЧИ</a>
                 </div>
             </div>
         </section>
         <section class="section news">
             <div class="container">
                 <div class="news__top">
-                    <div class="section-title-s">Новости и события</div>
-                    <a href="#" class="specialists-slider__btn-text specialists-slider__btn-text__absolute">ВСЕ НОВОСТИ</a>
+                    <div class="section-title-s">Это интересно</div>
+                    <a href="/pages/news.html" class="specialists-slider__btn-text specialists-slider__btn-text__absolute">Все публикации</a>
                 </div>
                 <div class="news__content">
                     <div class="news__col">
@@ -637,41 +627,41 @@
                         <div class="footer-row">
                             <a href="tel:+7 (843) 570-68-76" class="tel-number">+7 (843) 570-68-76</a>
                         </div>
-                        <a href="#" class="adress">
+                        <a href="/pages/contacts.html" class="adress">
                             <div class="adress__icon">
                                 <svg class="location location_white">
                                     <use xlink:href="/svg/sprite.svg#location"></use>
                                 </svg>
                             </div>
-                            <div class="adress__text adress__text_color_white">г. Казант ул.Петербургская 26</div>
+                            <div class="adress__text adress__text_color_white">г. Казань ул.Петербургская 26</div>
                         </a>
                     </div>
                 </div>
                 <div class="footer-menu">
                     <ul class="footer-menu__list">
                         <li class="footer-menu__item">
-                            <a href="#" class="footer-menu__link">Услуги</a>
+                            <a href="/" class="footer-menu__link">Главная</a>
                         </li>
                         <li class="footer-menu__item">
-                            <a href="#" class="footer-menu__link">Цены</a>
+                            <a href="/pages/services.html" class="footer-menu__link">Услуги</a>
                         </li>
                         <li class="footer-menu__item">
-                            <a href="#" class="footer-menu__link">Акции</a>
+                            <a href="/pages/prices.html" class="footer-menu__link">Цены</a>
                         </li>
                         <li class="footer-menu__item">
-                            <a href="#" class="footer-menu__link">Врачи</a>
+                            <a href="/pages/doctors.html" class="footer-menu__link">Врачи</a>
                         </li>
                         <li class="footer-menu__item">
-                            <a href="#" class="footer-menu__link">Портфолио</a>
+                            <a href="/pages/portfolio.html" class="footer-menu__link">Портфолио</a>
                         </li>
                         <li class="footer-menu__item">
-                            <a href="#" class="footer-menu__link">Отзывы</a>
+                            <a href="/pages/about.html" class="footer-menu__link">О нас</a>
                         </li>
                         <li class="footer-menu__item">
-                            <a href="#" class="footer-menu__link">О нас</a>
+                            <a href="/pages/contacts.html" class="footer-menu__link">Контакты</a>
                         </li>
                         <li class="footer-menu__item">
-                            <a href="#" class="footer-menu__link">Контакты</a>
+                            <a href="/pages/docs.html" class="footer-menu__link">Документы</a>
                         </li>
                     </ul>
                 </div>
@@ -859,22 +849,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="/js/script.js"></script>
-    <script>
-        $(document).ready(function(){
-            $("#form").submit(function(e) { //устанавливаем событие отправки для формы с id=form
-                e.preventDefault();
-                var form_data = $(this).serialize(); //собераем все данные из формы
-                $.ajax({
-                type: 'POST', //Метод отправки
-                url: '/send.php', //путь до php фаила отправителя
-                data: form_data,
-                        success: function(data){ // сoбытиe пoслe удaчнoгo oбрaщeния к сeрвeру и пoлучeния oтвeтa
-                        alert('все ок'); // пoкaжeм eё тeкст
-                        }
-                });
-            });
-        });
-        
-    </script>
 </body>
 </html>

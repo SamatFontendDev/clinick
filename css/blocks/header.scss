@@ -1,7 +1,7 @@
 .header__top{
     padding-top: 15px;
     padding-bottom: 15px;
-    background-image: linear-gradient(270deg,#6c89c8,#d18cca);
+    background: #7289c8;
 }
 .header-row{
     display: flex;
@@ -41,12 +41,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 50px;
+    padding-top: 100px;
     position: absolute;
-    top: 80px;
+    top: 0;
     width: 100%;
     left: 0;
-    height: 100%;
+    height: 103vh;
     background: #fff;
     z-index: 100;
     .nav-item{
@@ -108,8 +108,9 @@
     display: flex;
     position: relative;
     z-index: 2;
+    justify-content: space-between;
     @include phones{
-       flex-direction: column;
+       justify-content: space-between;
     }
 }
 .logo{
@@ -126,6 +127,7 @@
     font-size: 12px;
     @include phones{
         text-align: left;
+        display: none;
     }
 }
 .adress{
@@ -139,11 +141,15 @@
     width: 20px;
     height: 20px;
     fill: $pink;
+    @include phones{
+        width: 10px;
+        height: 10px;
+    }
 }
 .adress__text{
     font-size: 18px;
     @include phones{
-        font-size: 16px;
+        font-size: 12px;
     }
 }
 .mobile-menu-button{
@@ -173,6 +179,7 @@
     display: none;
     @include phones{
         display: block;
+        margin-top: 10px;
     }
 }
 .phone{
@@ -190,5 +197,27 @@
     fill: #5f5c9e;
 }
 .logo-img{
-    max-width: 220px;
+    max-width: 120px;
+    @include phones{
+        width: 80px;
+    }
+}
+.close--nav{
+    display: none;
+    z-index: 5;
+    top: 5px;
+    right: 10pxd;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    fill: #5f5c9e;
+}
+.f-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 12;
 }

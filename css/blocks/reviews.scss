@@ -3,14 +3,27 @@
 }
 .reviews__content{
     display: flex;
+    @include laptop{
+        flex-direction: column;
+    }
 }
 .reviews__col{
     width: 50%;
+    &:first-child{
+        margin-bottom: 40px;
+    }
     &:last-child{
         padding-left: 30px;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
+        @include laptop{
+            align-items: flex-start;
+            padding-left: 0;
+        }
+    }
+    @include laptop{
+        width: 100%;
     }
 }
 .doctors-slider__ava--small{
@@ -38,17 +51,26 @@
 }
 .reviews-slider__item{
     padding-left: 80px;
+    @include laptop{
+        padding-left: 0;
+    }
 }
 .reviews-slider{
     margin-bottom: 30px;
     max-width: 500px;
+    @include laptop{
+        max-width: 100%;
+    }
 }
 .reviews-slider__content{
-    padding: 40px 40px 40px 75px;
+    padding: 40px;
     max-width: 400px;
     border-radius: 40px;
     background: #fff;
     position: relative;
+    @include laptop{
+        max-width: 100%;
+    }
 }
 .reviews-slider__ava{
     width: 120px;
@@ -58,6 +80,7 @@
     position: absolute;
     top: 30px;
     left: -60px;
+    display: none;
 }
 .reviews-slider__title{
     margin-bottom: 30px;
@@ -84,6 +107,11 @@
 }
 .reviews-slider__photos{
     display: flex;
+    @include phones{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+    }
 }
 .reviews-slider__photo-wrap{
     margin-right: 16px;

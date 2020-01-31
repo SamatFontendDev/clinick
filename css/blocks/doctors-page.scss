@@ -1,14 +1,40 @@
 .doctors-page{
-    padding-bottom: 100px;
+    padding-bottom: 0;
 }
-.doctors-page__list{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 50px;
-    @include tablets{
-        grid-template-columns: 1fr 1fr;
-    }
+.our-photo{
+    height: 500px;
+}
+.doctor__item{
+    display: flex;
+    margin-bottom: 30px;
     @include phones{
-        grid-template-columns: 1fr;
+        flex-direction: column;
     }
+}
+.doctor__item-col{
+    &:first-child{
+        width: 30%;
+         @include phones{
+        width: 100%;
+    }
+    }
+    &:last-child{
+        width: 70%;
+         @include phones{
+        width: 100%;
+    }
+    }
+   
+}
+.doctor-name--blue{
+    color: $blue;
+    margin-bottom: 0;
+    div{
+        &:last-child{
+            font-size: 16px;
+        }
+    }
+}
+.doctor-desc{
+    color: $blue;
 }

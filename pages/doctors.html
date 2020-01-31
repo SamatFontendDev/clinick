@@ -14,6 +14,25 @@
 <body>
     <div class="wrapper">
         <header class="header">
+            <div class="header__bottom">
+                <div class="container">
+                    <div class="header-bottom-row">
+                        <div class="logo">
+                            <a href="/" class="logo__kink">
+                                <img src="/imgs/rocada-logo.png" alt="" class="logo-img">
+                            </a>
+                        </div>
+                        <a href="/pages/contacts.html" class="adress">
+                            <div class="adress__icon">
+                                <svg class="location">
+                                    <use xlink:href="/svg/sprite.svg#location"></use>
+                                </svg>
+                            </div>
+                            <div class="adress__text">г. Казань ул.Петербургская 26</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
             <div class="header__top">
                 <div class="container">
                     <div class="header-row">
@@ -33,29 +52,29 @@
                                 </div>
                             </div>
                             <ul class="nav-list">
+                                <svg class="close--nav">
+                                    <use xlink:href="/svg/sprite.svg#close"></use>
+                                </svg>
                                 <li class="nav-item">
-                                    <a href="#" class="nav__link">Услуги</a>
+                                    <a href="/" class="nav__link">Главная</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav__link">Цены</a>
+                                    <a href="/pages/services.html" class="nav__link">Услуги</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav__link">Акции</a>
+                                    <a href="/pages/prices.html" class="nav__link">Цены</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav__link">Врачи</a>
+                                    <a href="/pages/doctors.html" class="nav__link">Врачи</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav__link">Портфолио</a>
+                                    <a href="/pages/portfolio.html" class="nav__link">Портфолио</a>
+                                </li>
+                               <li class="nav-item">
+                                    <a href="/pages/about.html" class="nav__link">О нас</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav__link">Отзывы</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav__link">О нас</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav__link">Контакты</a>
+                                    <a href="/pages/contacts.html" class="nav__link">Контакты</a>
                                 </li>
                                 <li class="nav-item nav-item--phone">
                                     <a href="tel: +7 (843) 570-68-76" class="phone">
@@ -71,26 +90,7 @@
                     </div>
                 </div>
             </div>
-            <div class="header__bottom">
-                <div class="container">
-                    <div class="header-bottom-row">
-                        <div class="logo">
-                            <a href="/" class="logo__kink">
-                                <img src="/imgs/rocada-logo.png" alt="" class="logo-img">
-                            </a>
-                            <div class="logo-text">Работаем с 1991 года</div>
-                        </div>
-                        <a href="#" class="adress">
-                            <div class="adress__icon">
-                                <svg class="location">
-                                    <use xlink:href="/svg/sprite.svg#location"></use>
-                                </svg>
-                            </div>
-                            <div class="adress__text">г. Казань ул.Петербургская 26</div>
-                        </a>
-                    </div>
-                </div>
-            </div>
+            
         </header>
         <section class="section doctors-page">
             <div class="container">
@@ -107,80 +107,215 @@
                     </div>
                    <div>Врачи «Стоматологии комфорта» постоянно повышают квалификацию и осваивают новые методики лечения. Наша команда стоматологов всегда к вашим услугам!</div>
                 </div>
-                <ul class="doctors-page__list">
-                    <li class="doctors-page__item">
-                        <a href="/pages/doctor-detail.html" class="specialists-slider__link">
-                            <div class="specialists-slider__ava">
-                                <img src="/imgs/pictures/small_img_img_doctors_1_3.jpg" alt="" class="specialists-slider__img">
+            </div>
+        </section>
+        <section class="our-photo"></section>
+        <section class="section">
+            <div class="container">
+                <div class="section-title">Сертификаты и специальности наших врачей</div>
+                <ul class="doctors-list">
+                    <li class="doctor__item">
+                        <div class="doctor__item-col">
+                            <div class="doctor-name doctor-name--blue">
+                                <div>Салеева Гульшат Тауфиковна </div>
+                                <div>главный врач, директор.</div>
                             </div>
-                            <div class="specialists-slider__name">Назырова Гузель Лероновна</div>
-                            <div class="specialists-slider__desc">Врач стоматолог – терапевт первой категории</div>
-                            <div class="specialists-slider__btn">
-                                <div class="specialists-slider__btn-text">О ВРАЧЕ</div>
-                            </div>
-                        </a>
+                        </div>
+                        <div class="doctor__item-col">
+                            <div class="doctor-desc">д.м.н, профессор,  врач стоматолог – ортопед высшей категории, заведующая кафедрой ортопедической стоматологии КГМУ.
+                            Образование высшее по специальности «стоматология»
+                            Сертификат № 0116180296872 по специальности «Стоматология ортопедическая»,  действителен до 31 октября 2020 года.
+                            Сертификат № 0116180475282 по специальности «Организация здравоохранения и общественное здоровье», действителен до 13 мая 2020 года.</div>
+                        </div>
                     </li>
-                    <li class="doctors-page__item">
-                        <a href="/pages/doctor-detail.html" class="specialists-slider__link">
-                            <div class="specialists-slider__ava">
-                                <img src="/imgs/pictures/small_img_img_doctors_1_3.jpg" alt="" class="specialists-slider__img">
+                    <li class="doctor__item">
+                        <div class="doctor__item-col">
+                            <div class="doctor-name doctor-name--blue">
+                                <div>Назырова Гузель Лероновна</div>
+                                <div>врач стоматолог.</div>
                             </div>
-                            <div class="specialists-slider__name">Назырова Гузель Лероновна</div>
-                            <div class="specialists-slider__desc">Врач стоматолог – терапевт первой категории</div>
-                            <div class="specialists-slider__btn">
-                                <div class="specialists-slider__btn-text">О ВРАЧЕ</div>
+                        </div>
+                        <div class="doctor__item-col">
+                            <div class="doctor-desc">Образование высшее по специальности «стоматология»
+                                Сертификат № 0377180756766 по специальности «Стоматология терапевтическая», действителен до 6 октября 2022 года.
+                                Сертификат № 0116310032513 по специальности «Организация здравоохранения и общественное здоровье», действителен до 21 декабря 2021 года.</div>
                             </div>
-                        </a>
                     </li>
-                    <li class="doctors-page__item">
-                        <a href="/pages/doctor-detail.html" class="specialists-slider__link">
-                            <div class="specialists-slider__ava">
-                                <img src="/imgs/pictures/small_img_img_doctors_1_3.jpg" alt="" class="specialists-slider__img">
+                    <li class="doctor__item">
+                        <div class="doctor__item-col">
+                            <div class="doctor-name doctor-name--blue">
+                                <div>Обшивалкина Диляра Ильдусовна</div>
+                                <div>заместитель главного врача по лечебной работе, врач стоматолог – терапевт.</div>
                             </div>
-                            <div class="specialists-slider__name">Назырова Гузель Лероновна</div>
-                            <div class="specialists-slider__desc">Врач стоматолог – терапевт первой категории</div>
-                            <div class="specialists-slider__btn">
-                                <div class="specialists-slider__btn-text">О ВРАЧЕ</div>
-                            </div>
-                        </a>
+                        </div>
+                        <div class="doctor__item-col">
+                            <div class="doctor-desc">Образование высшее по специальности «Стоматология»
+                                Сертификат № 180000781569  по специальности «Стоматология терапевтическая», действителен до 8 октября  2021 года.
+                                Сертификат № 0116180707089 по специальности «Организация здравоохранения и общественное здоровье», действителен до 10 июня 2024 года.</div>
+                        </div>
                     </li>
-                    <li class="doctors-page__item">
-                        <a href="/pages/doctor-detail.html" class="specialists-slider__link">
-                            <div class="specialists-slider__ava">
-                                <img src="/imgs/pictures/small_img_img_doctors_1_3.jpg" alt="" class="specialists-slider__img">
+                    <li class="doctor__item">
+                        <div class="doctor__item-col">
+                            <div class="doctor-name doctor-name--blue">
+                                <div>Мустакимова Резеда Фаритовна</div>
+                                <div>врач стоматолог – терапевт, к.м.н.</div>
                             </div>
-                            <div class="specialists-slider__name">Назырова Гузель Лероновна</div>
-                            <div class="specialists-slider__desc">Врач стоматолог – терапевт первой категории</div>
-                            <div class="specialists-slider__btn">
-                                <div class="specialists-slider__btn-text">О ВРАЧЕ</div>
-                            </div>
-                        </a>
+                        </div>
+                        <div class="doctor__item-col">
+                            <div class="doctor-desc">Образование высшее по специальности «Стоматология»
+                            Сертификат № 0116310031383 по специальности «Стоматология терапевтическая», действителен до 16 октября 2022 года.</div>
+                        </div>
                     </li>
-                    <li class="doctors-page__item">
-                        <a href="/pages/doctor-detail.html" class="specialists-slider__link">
-                            <div class="specialists-slider__ava">
-                                <img src="/imgs/pictures/small_img_img_doctors_1_3.jpg" alt="" class="specialists-slider__img">
+                    <li class="doctor__item">
+                        <div class="doctor__item-col">
+                            <div class="doctor-name doctor-name--blue">
+                                <div>Амирова Гузель Раухатовна</div>
+                                <div>врач стоматолог – терапевт.</div>
                             </div>
-                            <div class="specialists-slider__name">Назырова Гузель Лероновна</div>
-                            <div class="specialists-slider__desc">Врач стоматолог – терапевт первой категории</div>
-                            <div class="specialists-slider__btn">
-                                <div class="specialists-slider__btn-text">О ВРАЧЕ</div>
-                            </div>
-                        </a>
+                        </div>
+                        <div class="doctor__item-col">
+                            <div class="doctor-desc">Образование высшее по специальности «Стоматология»
+                            Сертификат № 0116180707303 по специальности «Стоматология терапевтическая», действителен 7 октября 2024 года.</div>
+                        </div>
                     </li>
-                    <li class="doctors-page__item">
-                        <a href="/pages/doctor-detail.html" class="specialists-slider__link">
-                            <div class="specialists-slider__ava">
-                                <img src="/imgs/pictures/small_img_img_doctors_1_3.jpg" alt="" class="specialists-slider__img">
+                    <li class="doctor__item">
+                        <div class="doctor__item-col">
+                            <div class="doctor-name doctor-name--blue">
+                                <div>Хусаенова Гульнара Ильдаровна</div>
+                                <div>врач стоматолог.</div>
                             </div>
-                            <div class="specialists-slider__name">Назырова Гузель Лероновна</div>
-                            <div class="specialists-slider__desc">Врач стоматолог – терапевт первой категории</div>
-                            <div class="specialists-slider__btn">
-                                <div class="specialists-slider__btn-text">О ВРАЧЕ</div>
-                            </div>
-                        </a>
+                        </div>
+                        <div class="doctor__item-col">
+                            <div class="doctor-desc">Образование высшее по специальности «Стоматология»
+                            Сертификат № 332400001242 по специальности «Стоматология общей практики», действителен до 15 июля 2021 года.</div>
+                        </div>
                     </li>
-                   
+                    <li class="doctor__item">
+                        <div class="doctor__item-col">
+                            <div class="doctor-name doctor-name--blue">
+                                <div>Михалев Павел Николаевич</div>
+                                <div>врач стоматолог – хирург, к.м.н.</div>
+                            </div>
+                        </div>
+                        <div class="doctor__item-col">
+                            <div class="doctor-desc">Образование высшее по специальности «Стоматология»
+                            Сертификат № 0116180706557 по специальности «Стоматология хирургическая», действителен до 27 марта 2024 года.</div>
+                        </div>
+                    </li>
+                    <li class="doctor__item">
+                        <div class="doctor__item-col">
+                            <div class="doctor-name doctor-name--blue">
+                                <div>Смирнов Алексей Евгеньевич</div>
+                                <div>врач стоматолог – хирург.</div>
+                            </div>
+                        </div>
+                        <div class="doctor__item-col">
+                            <div class="doctor-desc">Образование высшее по специальности «Стоматология»
+                                Сертификат № 0116310031473  по специальности «Стоматология ортопедическая»,  действителен до 08 ноября 2022 года.
+                                Сертификат № 0116180707180  по специальности «Стоматология хирургическая», действителен до 14 июня 2024 года.</div>
+                        </div>
+                    </li>
+                    <li class="doctor__item">
+                        <div class="doctor__item-col">
+                            <div class="doctor-name doctor-name--blue">
+                                <div>Мусина Марина Витальевна</div>
+                                <div>врач  стоматолог – ортодонт.</div>
+                            </div>
+                        </div>
+                        <div class="doctor__item-col">
+                            <div class="doctor-desc">Образование высшее по специальности «Стоматология»
+                            Сертификат № 0316040006957  по специальности «Ортодонтия», действителен до 13 февраля 2021 года.</div>
+                        </div>
+                    </li>
+                    <li class="doctor__item">
+                        <div class="doctor__item-col">
+                            <div class="doctor-name doctor-name--blue">
+                                <div>Гималетдинова Альбина Махмутовна</div>
+                                <div>врач стоматолог - ортопед.</div>
+                            </div>
+                        </div>
+                        <div class="doctor__item-col">
+                            <div class="doctor-desc">Образование высшее по специальности «Стоматология»
+                            Сертификат № 0116180476642 по специальности «Стоматология ортопедическая», действителен до 31 марта 2021 года.</div>
+                        </div>
+                    </li>
+                    <li class="doctor__item">
+                        <div class="doctor__item-col">
+                            <div class="doctor-name doctor-name--blue">
+                                <div>Сагитов Ильдар Ильшатович</div>
+                                <div>врач стоматолог – ортопед.</div>
+                            </div>
+                        </div>
+                        <div class="doctor__item-col">
+                            <div class="doctor-desc">Образование высшее по специальности «Стоматология»
+                                Сертификат № 0116310034081  специальности «Стоматология ортопедическая», действителен до 29 марта 2023 года.
+                                Врач стоматолог-хирург
+                                Сертификат № 0116180195628 специальности «Стоматология хирургическая», действителен до 31 января 2020 года.</div>
+                        </div>
+                    </li>
+                    <li class="doctor__item">
+                        <div class="doctor__item-col">
+                            <div class="doctor-name doctor-name--blue">
+                                <div>Салеева Ляйсан Ринатовна</div>
+                                <div>врач-стоматолог.</div>
+                            </div>
+                        </div>
+                        <div class="doctor__item-col">
+                            <div class="doctor-desc">Образование высшее по специальности «Стоматология»
+                                Свидетельство об аккредитации специалиста 332400018354.
+                                Врач стоматолог</div>
+                        </div>
+                    </li>
+                    <li class="doctor__item">
+                        <div class="doctor__item-col">
+                            <div class="doctor-name doctor-name--blue">
+                                <div>Денисов Николай Дмитриевич</div>
+                                <div>врач-стоматолог.</div>
+                            </div>
+                        </div>
+                        <div class="doctor__item-col">
+                            <div class="doctor-desc">	
+                                Образование высшее по специальности «Стоматология»
+                                Свидетельство об аккредитации специалиста 332400018388.</div>
+                        </div>
+                    </li>
+                    <li class="doctor__item">
+                        <div class="doctor__item-col">
+                            <div class="doctor-name doctor-name--blue">
+                                <div>Зиятдинова Ильмира Радиковна</div>
+                                <div>врач-стоматолог.</div>
+                            </div>
+                        </div>
+                        <div class="doctor__item-col">
+                            <div class="doctor-desc">Образование высшее по специальности «Стоматология»
+                                Свидетельство об аккредитации специалиста 332400018354.
+                                Врач стоматолог</div>
+                        </div>
+                    </li>
+                    <li class="doctor__item">
+                        <div class="doctor__item-col">
+                            <div class="doctor-name doctor-name--blue">
+                                <div>Ефимова Ксения Михайловна</div>
+                                <div>врач-стоматолог.</div>
+                            </div>
+                        </div>
+                        <div class="doctor__item-col">
+                            <div class="doctor-desc">Образование высшее по специальности «Стоматология»
+                                Свидетельство об аккредитации специалиста 332400028869.</div>
+                        </div>
+                    </li>
+                    <li class="doctor__item">
+                        <div class="doctor__item-col">
+                            <div class="doctor-name doctor-name--blue">
+                                <div>Кузнецов Эдуард Юрьевич</div>
+                                <div>врач-стоматолог.</div>
+                            </div>
+                        </div>
+                        <div class="doctor__item-col">
+                            <div class="doctor-desc">Образование высшее по специальности «Стоматология»
+                            Свидетельство об аккредитации специалиста 332400028885.</div>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -197,41 +332,41 @@
                         <div class="footer-row">
                             <a href="tel:+7 (843) 570-68-76" class="tel-number">+7 (843) 570-68-76</a>
                         </div>
-                        <a href="#" class="adress">
+                        <a href="/pages/contacts.html" class="adress">
                             <div class="adress__icon">
                                 <svg class="location location_white">
                                     <use xlink:href="/svg/sprite.svg#location"></use>
                                 </svg>
                             </div>
-                            <div class="adress__text adress__text_color_white">г. Казант ул.Петербургская 26</div>
+                            <div class="adress__text adress__text_color_white">г. Казань ул.Петербургская 26</div>
                         </a>
                     </div>
                 </div>
                 <div class="footer-menu">
                     <ul class="footer-menu__list">
                         <li class="footer-menu__item">
-                            <a href="#" class="footer-menu__link">Услуги</a>
+                            <a href="/" class="footer-menu__link">Главная</a>
                         </li>
                         <li class="footer-menu__item">
-                            <a href="#" class="footer-menu__link">Цены</a>
+                            <a href="/pages/services.html" class="footer-menu__link">Услуги</a>
                         </li>
                         <li class="footer-menu__item">
-                            <a href="#" class="footer-menu__link">Акции</a>
+                            <a href="/pages/prices.html" class="footer-menu__link">Цены</a>
                         </li>
                         <li class="footer-menu__item">
-                            <a href="#" class="footer-menu__link">Врачи</a>
+                            <a href="/pages/doctors.html" class="footer-menu__link">Врачи</a>
                         </li>
                         <li class="footer-menu__item">
-                            <a href="#" class="footer-menu__link">Портфолио</a>
+                            <a href="/pages/portfolio.html" class="footer-menu__link">Портфолио</a>
                         </li>
                         <li class="footer-menu__item">
-                            <a href="#" class="footer-menu__link">Отзывы</a>
+                            <a href="/pages/about.html" class="footer-menu__link">О нас</a>
                         </li>
                         <li class="footer-menu__item">
-                            <a href="#" class="footer-menu__link">О нас</a>
+                            <a href="/pages/contacts.html" class="footer-menu__link">Контакты</a>
                         </li>
                         <li class="footer-menu__item">
-                            <a href="#" class="footer-menu__link">Контакты</a>
+                            <a href="/pages/docs.html" class="footer-menu__link">Документы</a>
                         </li>
                     </ul>
                 </div>

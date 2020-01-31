@@ -4,6 +4,21 @@
 .service__btns{
     display: flex;
     align-items: center;
+    @include phones{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .hero-btn{
+        @include phones{
+            margin-bottom: 10px;
+        }
+    }
+    .service-btn{
+        @include phones{
+            margin-bottom: 10px;
+        }
+        
+    }
 }
 .service-btn{
     margin-left: 20px;
@@ -12,15 +27,38 @@
     font-weight: 600;
     font-size: 16px;
     cursor: pointer;
+    @include tablets{
+        font-size: 14px;
+    }
+    @include phones{
+        margin-left: 0;
+    }
 }
 .doctors{
     background: #f6f9ff;
+    @include phones{
+        padding-bottom: 70px;
+    }
 }
 .doctors__content{
     display: flex;
+    @include tablets{
+        flex-direction: column;
+    }
 }
 .doctors__col{
     width: 50%;
+    &:first-child{
+        @include laptop{
+            width: 80%;
+        }
+        @include tablets{
+            width: 100%;
+        }
+    }
+    @include tablets{
+        width: 100%;
+    }
 }
 .service-btn_ml_0{
     margin-left: 0;
@@ -31,6 +69,12 @@
 }
 .doctors-slider__content{
     display: flex;
+    @include laptop{
+        flex-direction: column;
+    }
+    @include tablets{
+        align-items: center;
+    }
 }
 .doctors-slider__ava{
     width: 160px;
@@ -44,10 +88,12 @@
 }
 .doctors-slider__name{
     color: #5f5c9e;
-    text-decoration: underline;
     margin-bottom: 10px;
     font-size: 20px;
     width: 70%;
+    @include tablets{
+        width: 100%;
+    }
 }
 .doctors-slider-text{
     color: #7d77a6;
@@ -56,6 +102,15 @@
 .slider-buttons--doctors-slider{
     bottom: 5px;
     left: 40%;
+    @include laptop{
+        bottom: -90px;
+        left: 10%;
+    }
+    @include tablets{
+        left: 50%;
+        width: 200px;
+        margin-left: -80px;
+    }
 }
 .service-price__desc{
     position: relative;
@@ -123,6 +178,9 @@
 }
 .stage__title{
     margin-bottom: 5px;
+    @include phones{
+        font-size: 16px;
+    }
 }
 .stage__text{
     font-size: 14px;
@@ -157,5 +215,10 @@
         color: #c777bf;
         border-bottom: 1px solid transparent;
         transition: .2s;
+    }
+}
+.doctors-slider__content-left{
+    @include tablets{
+        margin-bottom: 10px;
     }
 }

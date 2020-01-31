@@ -1,0 +1,11 @@
+.news-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+    @include tablets{
+        grid-template-columns: 1fr;
+    }
+    @include phones{
+        grid-gap: 10px;
+    }
+}

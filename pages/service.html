@@ -15,6 +15,25 @@
 <body>
     <div class="wrapper">
         <header class="header">
+            <div class="header__bottom">
+                <div class="container">
+                    <div class="header-bottom-row">
+                        <div class="logo">
+                            <a href="/" class="logo__kink">
+                                <img src="/imgs/rocada-logo.png" alt="" class="logo-img">
+                            </a>
+                        </div>
+                        <a href="/pages/contacts.html" class="adress">
+                            <div class="adress__icon">
+                                <svg class="location">
+                                    <use xlink:href="/svg/sprite.svg#location"></use>
+                                </svg>
+                            </div>
+                            <div class="adress__text">г. Казань ул.Петербургская 26</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
             <div class="header__top">
                 <div class="container">
                     <div class="header-row">
@@ -34,29 +53,29 @@
                                 </div>
                             </div>
                             <ul class="nav-list">
+                                <svg class="close--nav">
+                                    <use xlink:href="/svg/sprite.svg#close"></use>
+                                </svg>
                                 <li class="nav-item">
-                                    <a href="#" class="nav__link">Услуги</a>
+                                    <a href="/" class="nav__link">Главная</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav__link">Цены</a>
+                                    <a href="/pages/services.html" class="nav__link">Услуги</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav__link">Акции</a>
+                                    <a href="/pages/prices.html" class="nav__link">Цены</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav__link">Врачи</a>
+                                    <a href="/pages/doctors.html" class="nav__link">Врачи</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav__link">Портфолио</a>
+                                    <a href="/pages/portfolio.html" class="nav__link">Портфолио</a>
+                                </li>
+                               <li class="nav-item">
+                                    <a href="/pages/about.html" class="nav__link">О нас</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav__link">Отзывы</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav__link">О нас</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav__link">Контакты</a>
+                                    <a href="/pages/contacts.html" class="nav__link">Контакты</a>
                                 </li>
                                 <li class="nav-item nav-item--phone">
                                     <a href="tel: +7 (843) 570-68-76" class="phone">
@@ -72,26 +91,7 @@
                     </div>
                 </div>
             </div>
-            <div class="header__bottom">
-                <div class="container">
-                    <div class="header-bottom-row">
-                        <div class="logo">
-                            <a href="/" class="logo__kink">
-                                <img src="/imgs/rocada-logo.png" alt="" class="logo-img">
-                            </a>
-                            <div class="logo-text">Работаем с 1991 года</div>
-                        </div>
-                        <a href="#" class="adress">
-                            <div class="adress__icon">
-                                <svg class="location">
-                                    <use xlink:href="/svg/sprite.svg#location"></use>
-                                </svg>
-                            </div>
-                            <div class="adress__text">г. Казань ул.Петербургская 26</div>
-                        </a>
-                    </div>
-                </div>
-            </div>
+            
         </header>
         <section class="section service">
             <div class="container">
@@ -111,7 +111,7 @@
                 </div>
                 <div class="service__btns">
                     <div class="hero-btn sign-up">КОНСУЛЬТАЦИЯ</div>
-                    <a href="#service-price" class="service-btn scroll-btn">ЦЕНЫ</a>
+                    <a href="/pages/prices.html" class="service-btn scroll-btn">ЦЕНЫ</a>
                     <a href="#doctors" class="service-btn scroll-btn">ВРАЧИ</a>
                 </div>
             </div>
@@ -131,7 +131,7 @@
                                <p>Специализируемся на сложной имплантации с 2006 года.</p>
                                <p>Наши специалисты имеют внушительный опыт работы и обладают всеми необходимыми навыками для имплантации зубов с высокой приживляемостью имплантатов.</p>
                                <div class="service__btns">
-                                <a href="#reviews" class="service-btn service-btn_ml_0 scroll-btn">ОТЗЫВЫ И ФОТО</a>
+                                <a href="#reviews" class="service-btn service-btn_ml_0 scroll-btn">НАШИ РАБОТЫ</a>
                                 <a href="#stages" class="service-btn scroll-btn">ЭТАПЫ</a>
                                 <a href="#warranty" class="service-btn scroll-btn">ГАРАНТИЯ</a>
                             </div>
@@ -177,41 +177,133 @@
                 </div>
             </div>
         </section>
-        <section id="service-price" class="section service-price">
+        <section id="reviews" class="section reviews">
             <div class="container">
-                <div class="section-title-s section-title-s-mb-50">Стоимость имплантации</div>
-                <div class="service-price__desc">
-                    <svg class="wallet">
-                        <use xlink:href="/svg/sprite.svg#wallet"></use>
-                    </svg>
-                    <b>Обратите внимание.</b> Цена на нашем сайте равна цене в клинике. Без скрытых платежей и доплат. Не доверяйте клиникам, которые привлекают низкими ценами, не включая в стоимость все работы и материалы.
+                <div class="section-title-s section-title-s-mb-50">Отзывы и фото пациентов<br> после имплантации</div>
+                <div class="reviews__content">
+                    <div class="reviews__col">
+                        <div class="specialists__text">
+                            <div class="specialists__text-left">
+                                <svg class="quotes quotes-blue">
+                                    <use xlink:href="/svg/sprite.svg#quotes"></use>
+                                </svg>
+                            </div>
+                           <div>
+                               <div class="reviews-left-text">
+                                Советую не медлить с имплантацией! Длительное отсутствие зуба может привести к убыли костной ткани, что в будущем увеличит сроки и стоимость лечения. Имплантация полностью восстановит эстетику и жевательную функцию, и вы вновь будете спокойно общаться и улыбаться!
+                               </div>
+                           </div>
+                        </div>
+                        <div class="doctors-slider__content doctors-slider__content--pl">
+                            <div class="doctors-slider__content-left">
+                                <div class="doctors-slider__ava doctors-slider__ava--small">
+                                    <img src="/imgs/pictures/small_img_img_doctors_1_3.jpg" alt="" class="doctors-slider__img">
+                                </div>
+                            </div>
+                           <div class="doctor__desc">
+                                <div class="doctors-slider__name">Смирнов Алексей Евгеньевич</div>
+                                <div class="doctors-slider-text">врач стоматолог – хирург</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviews__col">
+                        <div class="reviews-slider">
+                            <ul class="reviews-slider__list">
+                                <li class="reviews-slider__item">
+                                    <div class="reviews-slider__content">
+                                        <div class="reviews-slider__ava">
+                                            <img src="/imgs/pictures/small_img_img_doctors_1_3.jpg" alt="" class="reviews-slider__img">
+                                        </div>
+                                        <div class="reviews-slider__info">
+                                            <div class="reviews-slider__title">Имплантат и металлокерамическая коронка в области 46 зуба. Система Альфа Био</div>
+                                            <div class="reviews-slider__row">
+                                                <div class="reviews-slider__col">
+                                                    <div>Срок лечения</div>
+                                                    <div>5 визитов</div>
+                                                </div>
+                                                <div class="reviews-slider__col">
+                                                    <div>Сумма лечения</div>
+                                                    <div>40 000 руб.</div>
+                                                </div>
+                                            </div>
+                                            <div class="reviews-slider__photos">
+                                                <div class="reviews-slider__photo-wrap">
+                                                    <div class="reviews-slider__photo">
+                                                        <a href="/imgs/pictures/varvara_before.jpg" data-fancybox="gallery-service-photos" data-caption="Caption for single image">
+                                                            <img src="/imgs/pictures/varvara_before.jpg" alt="" class="reviews-slider__img">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="reviews-slider__photo-wrap">
+                                                    <div class="reviews-slider__photo">
+                                                        <a href="/imgs/pictures/varvara_after.jpg" data-fancybox="gallery-service-photos" data-caption="Caption for single image">
+                                                            <img src="/imgs/pictures/varvara_after.jpg" alt="" class="reviews-slider__img">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="reviews-slider__photo-wrap">
+                                                    <div class="reviews-slider__photo">
+                                                        <a href="/imgs/pictures/varvara_final.jpg" data-fancybox="gallery-service-photos" data-caption="Caption for single image">
+                                                            <img src="/imgs/pictures/varvara_final.jpg" alt="" class="reviews-slider__img">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="reviews-slider__item">
+                                    <div class="reviews-slider__content">
+                                        <div class="reviews-slider__ava">
+                                            <img src="/imgs/pictures/small_img_img_doctors_1_3.jpg" alt="" class="reviews-slider__img">
+                                        </div>
+                                        <div class="reviews-slider__info">
+                                            <div class="reviews-slider__title">Имплантат и металлокерамическая коронка в области 46 зуба. Система Альфа Био</div>
+                                            <div class="reviews-slider__row">
+                                                <div class="reviews-slider__col">
+                                                    <div>Срок лечения</div>
+                                                    <div>5 визитов</div>
+                                                </div>
+                                                <div class="reviews-slider__col">
+                                                    <div>Сумма лечения</div>
+                                                    <div>40 000 руб.</div>
+                                                </div>
+                                            </div>
+                                            <div class="reviews-slider__photos">
+                                                <div class="reviews-slider__photo-wrap">
+                                                    <div class="reviews-slider__photo">
+                                                        <a href="/imgs/pictures/varvara_before.jpg" data-fancybox="gallery-service-photos" data-caption="Caption for single image">
+                                                            <img src="/imgs/pictures/varvara_before.jpg" alt="" class="reviews-slider__img">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="reviews-slider__photo-wrap">
+                                                    <div class="reviews-slider__photo">
+                                                        <a href="/imgs/pictures/varvara_after.jpg" data-fancybox="gallery-service-photos" data-caption="Caption for single image">
+                                                            <img src="/imgs/pictures/varvara_after.jpg" alt="" class="reviews-slider__img">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="reviews-slider__photo-wrap">
+                                                    <div class="reviews-slider__photo">
+                                                        <a href="/imgs/pictures/varvara_final.jpg" data-fancybox="gallery-service-photos" data-caption="Caption for single image">
+                                                            <img src="/imgs/pictures/varvara_final.jpg" alt="" class="reviews-slider__img">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                               
+                            </ul>
+                        </div>
+                        <div class="slider-buttons slider-buttons--reviews">
+                            <div class="slider-button slider-button--reviews-prev"></div>
+                            <div class="slider-button slider-button--reviews-next"></div>
+                        </div>
+                    </div>
                 </div>
-                <ul class="prices__list">
-                    <li class="prices__item">
-                        <div class="prices__row">
-                            <div class="prices__name">Установка одного имплантата (Германия)</div>
-                            <div class="prices__num">36 800 руб.</div>
-                        </div>
-                    </li>
-                    <li class="prices__item">
-                        <div class="prices__row">
-                            <div class="prices__name">Установка одного имплантата (Германия)</div>
-                            <div class="prices__num">36 800 руб.</div>
-                        </div>
-                    </li>
-                    <li class="prices__item">
-                        <div class="prices__row">
-                            <div class="prices__name">Установка одного имплантата (Германия)</div>
-                            <div class="prices__num">36 800 руб.</div>
-                        </div>
-                    </li>
-                    <li class="prices__item">
-                        <div class="prices__row">
-                            <div class="prices__name">Установка одного имплантата (Германия)</div>
-                            <div class="prices__num">36 800 руб.</div>
-                        </div>
-                    </li>
-                </ul>
             </div>
         </section>
         <section id="stages" class="section stages">
@@ -262,145 +354,15 @@
                 <div class="stages-text">только по назначению врача в результате обследования</div>
                 <ul class="additional-list">
                     <li class="additional__item">
-                        <a href="#" class="additional__link">Синус-лифтинг</a>
+                        <a href="/pages/detail.html" class="additional__link">Синус-лифтинг</a>
                     </li>
                     <li class="additional__item">
-                        <a href="#" class="additional__link">Костная пластика</a>
+                        <a href="/pages/detail.html" class="additional__link">Костная пластика</a>
                     </li>
                     <li class="additional__item">
-                        <a href="#" class="additional__link">Наращивание десны</a>
+                        <a href="/pages/detail.html" class="additional__link">Наращивание десны</a>
                     </li>
                 </ul>
-            </div>
-        </section>
-        <section id="reviews" class="section reviews">
-            <div class="container">
-                <div class="section-title-s section-title-s-mb-50">Отзывы и фото пациентов<br> после имплантации</div>
-                <div class="reviews__content">
-                    <div class="reviews__col">
-                        <div class="specialists__text">
-                            <div class="specialists__text-left">
-                                <svg class="quotes quotes-blue">
-                                    <use xlink:href="/svg/sprite.svg#quotes"></use>
-                                </svg>
-                            </div>
-                           <div>
-                               <div class="reviews-left-text">
-                                Советую не медлить с имплантацией! Длительное отсутствие зуба может привести к убыли костной ткани, что в будущем увеличит сроки и стоимость лечения. Имплантация полностью восстановит эстетику и жевательную функцию, и вы вновь будете спокойно общаться и улыбаться!
-                               </div>
-                           </div>
-                        </div>
-                        <div class="doctors-slider__content doctors-slider__content--pl">
-                            <div class="doctors-slider__content-left">
-                                <div class="doctors-slider__ava doctors-slider__ava--small">
-                                    <img src="/imgs/pictures/small_img_img_doctors_1_3.jpg" alt="" class="doctors-slider__img">
-                                </div>
-                            </div>
-                           <div class="doctor__desc">
-                                <div class="doctors-slider__name">Смирнов Алексей Евгеньевич</div>
-                                <div class="doctors-slider-text">врач стоматолог – хирург</div>
-                            </div>
-                        </div>
-                        <a href="#" class="reviews__link">ОТЗЫВЫ ИЗ СОЦСЕТЕЙ</a>
-                    </div>
-                    <div class="reviews__col">
-                        <div class="reviews-slider">
-                            <ul class="reviews-slider__list">
-                                <li class="reviews-slider__item">
-                                    <div class="reviews-slider__content">
-                                        <div class="reviews-slider__ava">
-                                            <img src="/imgs/pictures/small_img_img_doctors_1_3.jpg" alt="" class="reviews-slider__img">
-                                        </div>
-                                        <div class="reviews-slider__info">
-                                            <div class="reviews-slider__title">Имплантат и металлокерамическая коронка в области 46 зуба. Система Альфа Био</div>
-                                            <div class="reviews-slider__row">
-                                                <div class="reviews-slider__col">
-                                                    <div>Срок лечения</div>
-                                                    <div>5 визитов</div>
-                                                </div>
-                                                <div class="reviews-slider__col">
-                                                    <div>Сумма лечения</div>
-                                                    <div>40 000 руб.</div>
-                                                </div>
-                                            </div>
-                                            <div class="reviews-slider__photos">
-                                                <div class="reviews-slider__photo-wrap">
-                                                    <div class="reviews-slider__photo">
-                                                        <a href="/imgs/pictures/varvara_before.jpg" data-fancybox="gallery" data-caption="Caption for single image">
-                                                            <img src="/imgs/pictures/varvara_before.jpg" alt="" class="reviews-slider__img">
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="reviews-slider__photo-wrap">
-                                                    <div class="reviews-slider__photo">
-                                                        <a href="/imgs/pictures/varvara_after.jpg" data-fancybox="gallery" data-caption="Caption for single image">
-                                                            <img src="/imgs/pictures/varvara_after.jpg" alt="" class="reviews-slider__img">
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="reviews-slider__photo-wrap">
-                                                    <div class="reviews-slider__photo">
-                                                        <a href="/imgs/pictures/varvara_final.jpg" data-fancybox="gallery" data-caption="Caption for single image">
-                                                            <img src="/imgs/pictures/varvara_final.jpg" alt="" class="reviews-slider__img">
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="reviews-slider__item">
-                                    <div class="reviews-slider__content">
-                                        <div class="reviews-slider__ava">
-                                            <img src="/imgs/pictures/small_img_img_doctors_1_3.jpg" alt="" class="reviews-slider__img">
-                                        </div>
-                                        <div class="reviews-slider__info">
-                                            <div class="reviews-slider__title">Имплантат и металлокерамическая коронка в области 46 зуба. Система Альфа Био</div>
-                                            <div class="reviews-slider__row">
-                                                <div class="reviews-slider__col">
-                                                    <div>Срок лечения</div>
-                                                    <div>5 визитов</div>
-                                                </div>
-                                                <div class="reviews-slider__col">
-                                                    <div>Сумма лечения</div>
-                                                    <div>40 000 руб.</div>
-                                                </div>
-                                            </div>
-                                            <div class="reviews-slider__photos">
-                                                <div class="reviews-slider__photo-wrap">
-                                                    <div class="reviews-slider__photo">
-                                                        <a href="/imgs/pictures/varvara_before.jpg" data-fancybox="gallery" data-caption="Caption for single image">
-                                                            <img src="/imgs/pictures/varvara_before.jpg" alt="" class="reviews-slider__img">
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="reviews-slider__photo-wrap">
-                                                    <div class="reviews-slider__photo">
-                                                        <a href="/imgs/pictures/varvara_after.jpg" data-fancybox="gallery" data-caption="Caption for single image">
-                                                            <img src="/imgs/pictures/varvara_after.jpg" alt="" class="reviews-slider__img">
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="reviews-slider__photo-wrap">
-                                                    <div class="reviews-slider__photo">
-                                                        <a href="/imgs/pictures/varvara_final.jpg" data-fancybox="gallery" data-caption="Caption for single image">
-                                                            <img src="/imgs/pictures/varvara_final.jpg" alt="" class="reviews-slider__img">
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                               
-                            </ul>
-                        </div>
-                        <div class="slider-buttons slider-buttons--reviews">
-                            <div class="slider-button slider-button--reviews-prev"></div>
-                            <div class="slider-button slider-button--reviews-next"></div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </section>
         <section id="warranty" class="section warranty">
@@ -519,6 +481,8 @@
                 </div>
             </div>
         </section>
+
+        
         <section class="section section-form section-form_pb_100">
             <div class="container">
                 <div class="form-wrap">
@@ -570,41 +534,41 @@
                         <div class="footer-row">
                             <a href="tel:+7 (843) 570-68-76" class="tel-number">+7 (843) 570-68-76</a>
                         </div>
-                        <a href="#" class="adress">
+                        <a href="/pages/contacts.html" class="adress">
                             <div class="adress__icon">
                                 <svg class="location location_white">
                                     <use xlink:href="/svg/sprite.svg#location"></use>
                                 </svg>
                             </div>
-                            <div class="adress__text adress__text_color_white">г. Казант ул.Петербургская 26</div>
+                            <div class="adress__text adress__text_color_white">г. Казань ул.Петербургская 26</div>
                         </a>
                     </div>
                 </div>
                 <div class="footer-menu">
                     <ul class="footer-menu__list">
                         <li class="footer-menu__item">
-                            <a href="#" class="footer-menu__link">Услуги</a>
+                            <a href="/" class="footer-menu__link">Главная</a>
                         </li>
                         <li class="footer-menu__item">
-                            <a href="#" class="footer-menu__link">Цены</a>
+                            <a href="/pages/services.html" class="footer-menu__link">Услуги</a>
                         </li>
                         <li class="footer-menu__item">
-                            <a href="#" class="footer-menu__link">Акции</a>
+                            <a href="/pages/prices.html" class="footer-menu__link">Цены</a>
                         </li>
                         <li class="footer-menu__item">
-                            <a href="#" class="footer-menu__link">Врачи</a>
+                            <a href="/pages/doctors.html" class="footer-menu__link">Врачи</a>
                         </li>
                         <li class="footer-menu__item">
-                            <a href="#" class="footer-menu__link">Портфолио</a>
+                            <a href="/pages/portfolio.html" class="footer-menu__link">Портфолио</a>
                         </li>
                         <li class="footer-menu__item">
-                            <a href="#" class="footer-menu__link">Отзывы</a>
+                            <a href="/pages/about.html" class="footer-menu__link">О нас</a>
                         </li>
                         <li class="footer-menu__item">
-                            <a href="#" class="footer-menu__link">О нас</a>
+                            <a href="/pages/contacts.html" class="footer-menu__link">Контакты</a>
                         </li>
                         <li class="footer-menu__item">
-                            <a href="#" class="footer-menu__link">Контакты</a>
+                            <a href="/pages/docs.html" class="footer-menu__link">Документы</a>
                         </li>
                     </ul>
                 </div>

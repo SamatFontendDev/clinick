@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    // sliders
+   // sliders
     $('.akcii-slider__list').slick({
         prevArrow: $('.slider-button-prev'),
         nextArrow: $('.slider-button-next')
@@ -63,14 +63,18 @@ $(document).ready(function(){
     //     document.querySelector('.checkbox-svg').style.display = 'block';
     //    }
     // });
-    var labels = document.querySelectorAll('.label-wrap');
+    var labels = document.querySelectorAll('.consent');
     labels.forEach((item, i) => {
-        item.addEventListener('click', () => {
-            console.log('клик');
-            if (document.querySelector('.checkbox').checked) {
-                document.querySelector('.checkbox-svg').style.display = 'none';
+        console.log(item);
+        item.addEventListener('click', (e) => {
+            var input = item.querySelector('.checkbox');
+            var checkboxSvg = item.querySelector('.checkbox-svg');
+            if (!input.checked) {
+                console.log('ssd');
+                checkboxSvg.style.display = 'none';
             } else{
-            document.querySelector('.checkbox-svg').style.display = 'block';
+                checkboxSvg.style.display = 'block';
+            console.log('ss')
         }
      });
     });
@@ -100,35 +104,44 @@ $(document).ready(function(){
 
     // mobile menu
     $('.mobile-menu-button').click(function(){
-        $('.nav-list').toggleClass('nav-list--active');
-        $('body').toggleClass('ovh');
-        $('.menu-text').toggleClass('none');
-        $('.close-text').toggleClass('none');
+        $('.nav-list').addClass('nav-list--active');
+        $('body').addClass('ovh');
+        $('.close--nav').css('display', 'block');
+    });
+    $('.close--nav').click(function(){
+        $('.nav-list').removeClass('nav-list--active');
+        $('body').removeClass('ovh');
+        $('.close--nav').css('display', 'none');
     });
 
     // service btns
    $('.scroll-btn').click(function(e) {
         e.preventDefault(e);
         var id  = $(this).attr('href');
-        var top = $(id).offset().top;
+        var top = $(id).offset().top - 150;
         $('body,html').animate({scrollTop: top}, 1000);
    });
 
     //gallery
     $('[data-fancybox="gallery"]').fancybox({});
+    $('[data-fancybox="gallery-service-photos"]').fancybox({
+        arrows: false,
+        buttons: ["close"],
+        touch : false
+    });
+});
 
-    // froms
-    // $("#form").submit(function(e) { //устанавливаем событие отправки для формы с id=form
-    //     e.preventDefault();
-    //     var form_data = $(this).serialize(); //собераем все данные из формы
-    //     $.ajax({
-    //     type: 'POST', //Метод отправки
-    //     url: 'send.php', //путь до php фаила отправителя
-    //     data: form_data,
-    //             success: function(data){ // сoбытиe пoслe удaчнoгo oбрaщeния к сeрвeру и пoлучeния oтвeтa
-    //             alert('все ок'); // пoкaжeм eё тeкст
-    //             }
-    //     });
-    // });
+ // top menu 
+jQuery(function($) {
+    var headerHeight = $('.header__bottom').height();
+
+    $(window).scroll(function(){
+        if($(this).scrollTop()>headerHeight){
+            $('.header__top').addClass('f-nav');
+        }
+        else if ($(this).scrollTop()<headerHeight){
+            $('.header__top').removeClass('f-nav');
+        }
+    });
 });
  

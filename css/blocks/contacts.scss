@@ -30,6 +30,9 @@
     &:hover{
         text-decoration: underline;
     }
+    @include phones{
+        font-size: 28px;
+    }
 }
 .contacts__list{
     display: grid;
@@ -50,4 +53,13 @@
 }
 .map{
     margin-bottom: -10px;
+}
+.instagram__link{
+    margin-right: 10px;
+    display: inline-block;
+}
+.instagram{
+    width: 20px;
+    height: 20px;
+    fill: $blue;
 }

@@ -69,3 +69,42 @@
         font-size: 14px;
     }
 }
+.table{
+    display: table;
+    width: 100%;
+}
+.trow{
+    display: table-row;
+}
+.td{
+    display: table-cell;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #6c89c8;
+    border-bottom: 1px dashed #6c89c8;
+    @include tablets{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    &:first-child{
+        width: 10px;
+        font-size: 16px;
+    }
+    &:nth-child(2){
+        width: 80%;
+        padding-left: 10px;
+        font-size: 20px;
+    }
+    &:last-child{
+        width: 17%;
+        text-align: right;
+        @include phones{
+            width: 30%;
+        }
+    }
+}
+.td--header{
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    border-bottom: 1px solid $blue;
+}
