@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="/imgs/pictures/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/imgs/pictures/favicon.ico" type="image/x-icon" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/imgs/pictures/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/imgs/pictures/favicon-16x16.png">	
     <title>Клиника "Рокада Мед"</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="/fonts/OpenSans/stylesheet.css">
@@ -90,45 +94,7 @@
                     </div>
                 </div>
             </div>
-            
         </header>
-        <section class="section contacts">
-            <div class="container">
-                <div class="breadcreams">
-                    <a href="/" class="breadcreams__link">Главная /</a>
-                    <a class="breadcreams__link breadcreams__link--not">Контакты</a>
-                </div>
-                <div class="section-title section-title--tal">Будем рады видеть вас в гостях!</div>
-                <div class="contacts__content">
-                    <ul class="contacts__list">
-                        <li class="contacts__item">
-                            <div class="contacts-subtitle">Звоните:</div>
-                            <a href="tel: +7 (843) 570-68-76" class="contacts-tel">+7 (843) 570-68-76</a>
-                        </li>
-                        <li class="contacts__item">
-                            <div class="contacts-subtitle">Пишите:</div>
-                            <a href="mailto: clinic@rocadamed.ru" class="contacts-mail">clinic@rocadamed.ru</a>
-                        </li>
-                        <li class="contacts__item contacts__item--clock">
-                            <svg class="clock">
-                                <use xlink:href="/svg/sprite.svg#clock"></use>
-                            </svg>
-                            <div class="contacts-text">Режим работы:<br>Понедельник-Пятница - 8.00-20.00<br>
-                                Суббота - 9.00-16.00<br>
-                                Воскресенье - выходной</div>
-                        </li>
-                        <li class="contacts__item contacts__item--clock">
-                            <a href="https://instagram.com/rocadamed_clinic?igshid=1kbj6f3f0yiht" class="instagram__link">
-                                <svg class="instagram">
-                                    <use xlink:href="/svg/sprite.svg#instagram"></use>
-                                </svg>
-                            </a>
-                            <div class="contacts-text">Подписывайтесь на наш инстаграм.</div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
         <section class="section news">
             <div class="container">
                 <div class="section-title">Публикации</div>
@@ -231,6 +197,12 @@
         </footer>
         <div class="modals">
             <div class="overlay"></div>
+            <div class="modal-ok">
+                <svg class="close">
+                    <use xlink:href="/svg/sprite.svg#close"></use>
+                </svg>
+                <div class="form__title form__title_mb_0">Отправленно!</div>
+            </div>
             <div class="modal-form">
                 <svg class="close">
                     <use xlink:href="/svg/sprite.svg#close"></use>
@@ -410,5 +382,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="/js/script.js"></script>
+    <script src="/js/ajax.js"></script>
 </body>
 </html>

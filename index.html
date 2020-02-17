@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="/imgs/pictures/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/imgs/pictures/favicon.ico" type="image/x-icon" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/imgs/pictures/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/imgs/pictures/favicon-16x16.png">		
     <title>Клиника "Рокада Мед"</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="/fonts/OpenSans/stylesheet.css">
@@ -154,7 +158,7 @@
                             </a>
                         </li>
                         <li class="services__item">
-                            <a href="#" class="services__link">
+                            <a href="/pages/lechenie-desen.html" class="services__link">
                                 <svg class="services-icon">
                                     <use xlink:href="/svg/sprite.svg#lechenieDesen"></use>
                                 </svg>
@@ -457,7 +461,7 @@
         <section class="section section-form">
             <div class="container">
                 <div class="form-wrap">
-                    <form method="POST" id="form" class="form">
+                    <form method="POST" class="form from-question">
                         <input name="type" type="hidden" value="Вопрос">
                         <div class="form__title">Всегда рады ответить<br> на ваши вопросы</div>
                         <div class="form-row">
@@ -669,23 +673,30 @@
         </footer>
         <div class="modals">
             <div class="overlay"></div>
+            <div class="modal-ok">
+                <svg class="close">
+                    <use xlink:href="/svg/sprite.svg#close"></use>
+                </svg>
+                <div class="form__title form__title_mb_0">Отправленно!</div>
+            </div>
             <div class="modal-form">
                 <svg class="close">
                     <use xlink:href="/svg/sprite.svg#close"></use>
                 </svg>
-                <form action="#" class="form">
-                    <input type="hidden" value="Вопрос">
+                <form class="form form-call">
+                    <input name="type" type="hidden" value="Запись на прием">
+                    <input name="url" type="hidden">
                     <div class="form__title">Записаться на приём</div>
                     <div class="form-row">
-                        <input placeholder="Ваше имя" type="text" class="input">
+                        <input name="name" required placeholder="Ваше имя" type="text" class="input">
                     </div>
                     <div class="form-row">
-                        <input placeholder="Контактный телефон" type="text" class="input input-tel">
+                        <input name="phone" required placeholder="Контактный телефон" type="text" class="input input-tel">
                     </div>
                    <div class="form-buttons">
-                        <div class="hero-btn hero-btn_mr-10">ОТПРАВИТЬ</div>
+                        <button class="hero-btn hero-btn_mr-10">ОТПРАВИТЬ</button>
                         <div class="consent">
-                            <input checked='true' class="checkbox" id="check2" type="checkbox">
+                            <input required checked='true' class="checkbox" id="check2" type="checkbox">
                             <div class="label-wrap">
                                 <label class="label-check" for="check2">
                                     <div class="label-col">
@@ -752,7 +763,7 @@
                                 </a>
                             </li>
                             <li class="services__item">
-                                <a href="#" class="services__link">
+                                <a href="/pages/lechenie-desen.html" class="services__link">
                                     <svg class="services-icon">
                                         <use xlink:href="/svg/sprite.svg#lechenieDesen"></use>
                                     </svg>
@@ -849,5 +860,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="/js/script.js"></script>
+    <script src="/js/ajax.js"></script>
 </body>
 </html>

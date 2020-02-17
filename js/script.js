@@ -56,25 +56,16 @@ $(document).ready(function(){
         nextArrow: $('.slider-button--reviews-next')
     });
     // checkbox
-    // document.querySelector('.label-wrap').addEventListener('click', () => {
-    //    if (document.querySelector('.checkbox').checked) {
-    //        document.querySelector('.checkbox-svg').style.display = 'none';
-    //    } else{
-    //     document.querySelector('.checkbox-svg').style.display = 'block';
-    //    }
-    // });
     var labels = document.querySelectorAll('.consent');
     labels.forEach((item, i) => {
-        console.log(item);
-        item.addEventListener('click', (e) => {
+      item.addEventListener('click', (e) => {
             var input = item.querySelector('.checkbox');
             var checkboxSvg = item.querySelector('.checkbox-svg');
             if (!input.checked) {
-                console.log('ssd');
+               
                 checkboxSvg.style.display = 'none';
             } else{
                 checkboxSvg.style.display = 'block';
-            console.log('ss')
         }
      });
     });
@@ -129,6 +120,8 @@ $(document).ready(function(){
         buttons: ["close"],
         touch : false
     });
+
+    // ajax
 });
 
  // top menu 

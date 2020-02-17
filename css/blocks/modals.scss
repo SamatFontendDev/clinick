@@ -83,3 +83,22 @@
     align-items: center;
     height: 100%;
 }
+.modal-ok{
+    display: none;
+    position: fixed;
+    background: #fff;
+    padding: 50px;
+    border-radius: 10px;
+    width: 400px;
+    top: 100px;
+    left: 50%;
+    margin-left: -200px;
+    z-index: 50;
+    text-align: center;
+    @include phones{
+        width: 80%;
+        left: 10%;
+        margin-left: 0;
+        padding: 30px;    
+    }
+}

@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="/imgs/pictures/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/imgs/pictures/favicon.ico" type="image/x-icon" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/imgs/pictures/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/imgs/pictures/favicon-16x16.png">	
     <title>Клиника "Рокада Мед"</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="/fonts/OpenSans/stylesheet.css">
@@ -181,18 +185,18 @@
                             <div class="portfolio-content__col">
                                 <div class="portfolio-content_left">
                                     <div class="portfolio-content__pic twentytwenty-container">
-                                        <img src="/imgs/pictures/after.jpg" alt="" class="portfolio-content__img">
-                                        <img src="/imgs/pictures/before.jpg" alt="" class="portfolio-content__img">
+                                        <img src="/imgs/pictures/5.jpg" alt="" class="portfolio-content__img">
+                                        <img src="/imgs/pictures/4.jpg" alt="" class="portfolio-content__img">
                                     </div>
                                 </div>
                             </div>
                             <div class="portfolio-content__col">
-                                <div class="portfolio-content__title">Профессиональная гигиена полости рта</div>
-                                <div class="portfolio-content__desc">Удаление зубного камня и налёта с использованием современных технологий</div>
+                                <div class="portfolio-content__title">Исправление прикуса</div>
+                                <div class="portfolio-content__desc">Пациентка Е., 25 лет, лечение самолигирующей брекет-системой «Clarity SL»</div>
                                 <div class="portfolio-content__row">
                                     <div class="portfolio-content__block">
                                         <div class="portfolio-content__subtitle">Срок лечения:</div>
-                                        <div class="portfolio-content__info">1 визит</div>
+                                        <div class="portfolio-content__info">19 месяцев</div>
                                     </div>
                                     <div class="portfolio-content__block">
                                         <div class="portfolio-content__subtitle">Сумма лечения:</div>
@@ -261,6 +265,12 @@
         </footer>
         <div class="modals">
             <div class="overlay"></div>
+            <div class="modal-ok">
+                <svg class="close">
+                    <use xlink:href="/svg/sprite.svg#close"></use>
+                </svg>
+                <div class="form__title form__title_mb_0">Отправленно!</div>
+            </div>
             <div class="modal-form">
                 <svg class="close">
                     <use xlink:href="/svg/sprite.svg#close"></use>
@@ -442,6 +452,7 @@
     <script src="/js/jquery.event.move.js"></script>
     <script src="/js/jquery.twentytwenty.js"></script>
     <script src="/js/script.js"></script>
+    <script src="/js/ajax.js"></script>
     <script>
         $(function(){
           $(".twentytwenty-container[data-orientation!='vertical']").twentytwenty({default_offset_pct: 0.7});

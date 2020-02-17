@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="/imgs/pictures/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/imgs/pictures/favicon.ico" type="image/x-icon" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/imgs/pictures/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/imgs/pictures/favicon-16x16.png">	
     <title>Клиника "Рокада Мед"</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="/fonts/OpenSans/stylesheet.css">
@@ -331,6 +335,12 @@
         </footer>
         <div class="modals">
             <div class="overlay"></div>
+            <div class="modal-ok">
+                <svg class="close">
+                    <use xlink:href="/svg/sprite.svg#close"></use>
+                </svg>
+                <div class="form__title form__title_mb_0">Отправленно!</div>
+            </div>
             <div class="modal-form">
                 <svg class="close">
                     <use xlink:href="/svg/sprite.svg#close"></use>
@@ -510,5 +520,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="/js/script.js"></script>
+    <script src="/js/ajax.js"></script>
 </body>
 </html>
